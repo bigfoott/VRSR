@@ -9,8 +9,10 @@
 		<title>VR Speedrunning</title>
 		
 		<meta content="Bigft.io" property="og:site_name">
-		<meta content="VR SPeedrunning" property="og:title">
-		<meta content="#4cd1ff" name="theme-color">
+		<meta content="VR Speedrunning Leaderboards" property="og:title">
+		<meta content="A central hub to view the leaderboards for the largest VR speedgames." property="og:description">
+		<meta content="https://bigft.io/images/vrsricon.png" property="og:image">
+		<meta content="#FF9C00" name="theme-color">
 		
 		<script src="https://kit.fontawesome.com/d16c543bf8.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -37,7 +39,7 @@
 								<select id="dropdown-select" onchange="loadGame(this.value)">
 								</select>
 							</div>
-							<img id="table-img" src="">
+							<div class="table-img-container"><img id="table-img" src=""></div>
 							<p><a id="src-url" href="" target="_blank">View on Speedrun.com</a></p>
 						</div>
 					</div>

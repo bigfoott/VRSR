@@ -5,8 +5,12 @@ var mainTable;
 
 var totalTabs;
 
+var root;
+
 function onLoad()
 {
+	root = document.documentElement;
+	
 	tabs = document.getElementById("tabs");
 	mainTable = document.getElementById("main-table");
 	
@@ -49,6 +53,8 @@ function loadGame(id)
 	tabs.innerHTML = '';
 	
 	totalTabs = json[id].boards.length;
+	
+	root.style.setProperty('--primary-color', json[id].color);
 	
 	for (var i = 0; i < json[id].boards.length; i++)
 	{

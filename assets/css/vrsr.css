@@ -1,5 +1,5 @@
 :root {
-	--primary-color: #E6B400;
+	--primary-color: #eee;
 }
 
 html {
@@ -11,6 +11,11 @@ body {
 }
 a {
 	color: var(--primary-color);
+	
+	-webkit-transition:color .35s ease-out;
+	-moz-transition: color .35s ease-out;
+	-o-transition: color .35s ease-out;
+	transition: color .35s ease-out;
 }
 
 .box, .tabs a, .tabs li:hover {
@@ -78,11 +83,13 @@ table td:not([align]), table th:not([align]) {
 	color: #eee;
 	border-color: transparent;
 }
-.select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after {
+.select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after, .select:focus {
 	border-color: var(--primary-color);
 }
+.table-img-container: {
+	height: 10rem;
+}
 #table-img {
-	max-width: 80%;
 	max-height: 10rem;
 }
 .title {
