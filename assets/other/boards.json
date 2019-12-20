@@ -3,6 +3,7 @@
 		"id": "boneworks",
 		"name": "BONEWORKS",
 		"hardware_var": "r8romd08",
+		"color": "#E6B400",
 		"boards": [
 			{
 				"name": "Any%",
@@ -32,6 +33,7 @@
 		"id": "jet_island",
 		"name": "Jet Island",
 		"hardware_var": "",
+		"color": "#ad4c50",
 		"boards": [
 			{
 				"name": "Any%",
@@ -66,6 +68,7 @@
 		"id": "job_simulator",
 		"name": "Job Simulator",
 		"hardware_var": "",
+		"color": "#009100",
 		"boards": [
 			{
 				"name": "All Jobs Any%",
@@ -105,6 +108,7 @@
 		"id": "lone_echo",
 		"name": "Lone Echo",
 		"hardware_var": "",
+		"color": "#278f96",
 		"boards": [
 			{
 				"name": "Any%",
@@ -119,6 +123,7 @@
 		"id": "shvr",
 		"name": "SUPERHOT VR",
 		"hardware_var": "",
+		"color": "#E62205",
 		"boards": [
 			{
 				"name": "Any%",
@@ -143,6 +148,7 @@
 		"id": "the_climb",
 		"name": "The Climb",
 		"hardware_var": "",
+		"color": "#00B3FF",
 		"boards": [
 			{
 				"name": "Bay",
@@ -177,6 +183,7 @@
 		"id": "talos_principle_vr",
 		"name": "The Talos Principle VR",
 		"hardware_var": "kn0zqxz8",
+		"color": "#26BCC6",
 		"boards": [
 			{
 				"name": "Gehenna Any%",
@@ -203,9 +210,35 @@
 		}
 	},
 	{
+		"id": "to_the_top",
+		"name": "To The Top",
+		"hardware_var": "e8mmk2v8",
+		"color": "#FF1F1F",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k"
+			},
+			{
+				"name": "All Levels",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk"
+			}
+		],
+		"board_indexes": {
+			"9d8jwq6k": 0,
+			"jdz8q83d": 1,
+			"02qoqojk": 2
+		}
+	},
+	{
 		"id": "vacation_simulator",
 		"name": "Vacation Simulator",
 		"hardware_var": "",
+		"color": "#FDEA8E",
 		"boards": [
 			{
 				"name": "Any%",
@@ -225,6 +258,7 @@
 		"id": "vvr",
 		"name": "Virtual Virtual Reality",
 		"hardware_var": "",
+		"color": "#B214FF",
 		"boards": [
 			{
 				"name": "Any%",
