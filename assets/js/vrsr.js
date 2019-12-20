@@ -45,6 +45,7 @@ function loadGame(id)
 	var imgTemplate = 'https://www.speedrun.com/themes/[ID]/cover-256.png';
 	
 	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th></tr></thead>';
+	
 	tabs.innerHTML = '';
 	
 	totalTabs = json[id].boards.length;
@@ -65,6 +66,21 @@ function loadGame(id)
 				
 				var tab = tabTemplate;
 				tabs.innerHTML += tab.replace("[ID]", index).replace("[ID]", index).replace("[NAME]", json[id].boards[index].name);
+				
+				var tosort = tabs.children;
+				var listitems = [];
+				for (var i = 0; i < tosort.length; i++) {
+					listitems.push(tosort.item(i));
+				}
+				listitems.sort(function(a, b) {
+					var compA = a.getAttribute('id').toUpperCase();
+					var compB = b.getAttribute('id').toUpperCase();
+					return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+				});
+
+				tabs.innerHTML = '';
+				for (var i = 0; i < listitems.length; i++)
+					tabs.appendChild(listitems[i]);
 				
 				var players = {};
 				for (var k = 0; k < j.data.players.data.length; k++)

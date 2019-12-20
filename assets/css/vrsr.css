@@ -1,3 +1,7 @@
+:root {
+	--primary-color: #E6B400;
+}
+
 html {
 	background-color: #2E3136;
 	color: #eee;
@@ -5,20 +9,35 @@ html {
 body {
 	background-color: #26282C;
 }
+a {
+	color: var(--primary-color);
+}
+
 .box, .tabs a, .tabs li:hover {
 	color: #eee;
 }
 a:hover {
-	color: #3273dc;
+	color: var(--primary-color);
 	text-decoration: underline;
 }
 .tabs a {
+	color: #777;
 	border-bottom-color: #4E4F52;
 	text-decoration: none;
+	font-weight: bold;
+	
+	-webkit-transition : border .25s ease-out, color .25s ease-out;
+	-moz-transition : border .25s ease-out, color .25s ease-out;
+	-o-transition : border .25s ease-out, color .25s ease-out;
+	transition : border .25s ease-out, color .25s ease-out;
 }
 .tabs a:hover {
-	border-bottom-color: #eee;
+	border-bottom-color: #777;
 	color: #eee;
+}
+.tabs li.is-active a {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
 }
 .box {
 	background-color: #2E3136;
@@ -51,7 +70,7 @@ table td:not([align]), table th:not([align]) {
 .table td, .table th {
 	padding-bottom: calc(.5em - 5px);
 }
-.table td, .table th, .tabs ul {
+.table td, .table th, .tabs ul, .tabs a {
 	border-color: #393C42;
 }
 .select select, .select select:hover, option {
@@ -60,7 +79,7 @@ table td:not([align]), table th:not([align]) {
 	border-color: transparent;
 }
 .select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after {
-	border-color: #3273dc;
+	border-color: var(--primary-color);
 }
 #table-img {
 	max-width: 80%;
