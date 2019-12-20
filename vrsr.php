@@ -24,6 +24,9 @@
 					<p>A central hub to view the leaderboards for the largest VR speedgames.</p>
 					<p>Only main categories with runs are displayed. If there is a game or category that you believe belongs here, ping me (bigfoot#0001) in the VR Speedrunning Discord server.</p>
 					<p>In order to minimize the amount of API calls to SRC, some details are hard-coded. If changes are made to games or categories that don't reflect here, ping me and I will fix it.</p>
+					<br>
+					<p>For the latest VR world records, check out the <a href="https://twitter.com/VRSpeedruns">VR Speedruns Twitter bot</a>!</p>
+					<p>All the code is open source and available on Github. For this site, check out <a href="https://github.com/bigfoott/VRSR">bigfoott/VRSR</a> and for the bot, check out <a href="https://github.com/bigfoott/VRSpeedrunsBot">bigfoott/VRSpeedrunsBot</a>.</p>
 				</div>
 			</div>
 			<div class="container">
