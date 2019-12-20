@@ -1,0 +1,238 @@
+[
+	{
+		"id": "boneworks",
+		"name": "BONEWORKS",
+		"hardware_var": "r8romd08",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/ndx99wod"
+			},
+			{
+				"name": "Glitchless%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/w20gg4jk"
+			},
+			{
+				"name": "Flight%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9kvooee2"
+			},
+			{
+				"name": "NewGame+",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9d844qqk"
+			}
+		],
+		"board_indexes": {
+			"ndx99wod": 0,
+			"w20gg4jk": 1,
+			"9kvooee2": 2,
+			"9d844qqk": 3
+		}
+	},
+	{
+		"id": "jet_island",
+		"name": "Jet Island",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mxz7x6/category/z27oq14d"
+			},
+			{
+				"name": "Any% NG",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mxz7x6/category/7dg9o6gk"
+			},
+			{
+				"name": "Any% NG+ No Wallskips",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mxz7x6/category/jdrez45k"
+			},
+			{
+				"name": "All Kills",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mxz7x6/category/q257nmjd"
+			},
+			{
+				"name": "0%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mxz7x6/category/wdm8n0o2"
+			}
+		],
+		"board_indexes": {
+			"z27oq14d": 0,
+			"7dg9o6gk": 1,
+			"jdrez45k": 2,
+			"q257nmjd": 3,
+			"wdm8n0o2": 4
+		}
+	},
+	{
+		"id": "job_simulator",
+		"name": "Job Simulator",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "All Jobs Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/w20z6yod"
+			},
+			{
+				"name": "All Jobs 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/rklqn682"
+			},
+			{
+				"name": "Gourmet Chef",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/9kvm9l8k"
+			},
+			{
+				"name": "Office Worker",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/rklqrzn2"
+			},
+			{
+				"name": "Store Clerk",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/ndxm40r2"
+			},
+			{
+				"name": "Auto Mechanic",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/w20w355d"
+			}
+		],
+		"board_indexes": {
+			"w20z6yod": 0,
+			"rklqn682": 1,
+			"9kvm9l8k": 2,
+			"rklqrzn2": 3,
+			"ndxm40r2": 4,
+			"w20w355d": 5
+		}
+	},
+	{
+		"id": "lone_echo",
+		"name": "Lone Echo",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde39wx6/category/zd3605ed"
+			}
+		],
+		"board_indexes": {
+			"zd3605ed": 0
+		}
+	},
+	{
+		"id": "shvr",
+		"name": "SUPERHOT VR",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxeo51y/category/5dwpw3nk"
+			},
+			{
+				"name": "Hardcore",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxeo51y/category/ndxp1oo2"
+			},
+			{
+				"name": "Endless 100",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxeo51y/category/7dgr06xk"
+			}
+		],
+		"board_indexes": {
+			"5dwpw3nk": 0,
+			"ndxp1oo2": 1,
+			"7dgr06xk": 2
+		}
+	},
+	{
+		"id": "the_climb",
+		"name": "The Climb",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Bay",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pw2l1/category/mkez108k"
+			},
+			{
+				"name": "Canyon",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pw2l1/category/wk67q5qd"
+			},
+			{
+				"name": "Alps",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pw2l1/category/n2y5l0zk"
+			},
+			{
+				"name": "North",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pw2l1/category/5dw53led"
+			},
+			{
+				"name": "All Levels",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pw2l1/category/7kjp0enk"
+			}
+		],
+		"board_indexes": {
+			"mkez108k": 0,
+			"wk67q5qd": 1,
+			"n2y5l0zk": 2,
+			"5dw53led": 3,
+			"7kjp0enk": 4
+		}
+	},
+	{
+		"id": "talos_principle_vr",
+		"name": "The Talos Principle VR",
+		"hardware_var": "kn0zqxz8",
+		"boards": [
+			{
+				"name": "Gehenna Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/jdzvy8vk"
+			},
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/q257yq8d"
+			},
+			{
+				"name": "Gehenna 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/02ql5opk"
+			},
+			{
+				"name": "All Sigils",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1nezx91/category/jdr7zxx2"
+			}
+		],
+		"board_indexes": {
+			"jdzvy8vk": 0,
+			"q257yq8d": 1,
+			"02ql5opk": 2,
+			"jdr7zxx2": 3
+		}
+	},
+	{
+		"id": "vacation_simulator",
+		"name": "Vacation Simulator",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/yd4oymp1/category/vdom5e92"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/yd4oymp1/category/wkpm5w8k"
+			}
+		],
+		"board_indexes": {
+			"vdom5e92": 0,
+			"wkpm5w8k": 1
+		}
+	},
+	{
+		"id": "vvr",
+		"name": "Virtual Virtual Reality",
+		"hardware_var": "",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369p2o21/category/wkpm3gwk"
+			}
+		],
+		"board_indexes": {
+			"wkpm3gwk": 0
+		}
+	}
+]

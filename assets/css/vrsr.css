@@ -1,7 +1,124 @@
+html {
+	background-color: #2E3136;
+	color: #eee;
+}
 body {
-	font-family: Whitney;
+	background-color: #26282C;
+}
+.box, .tabs a, .tabs li:hover {
+	color: #eee;
+}
+a:hover {
+	color: #3273dc;
+	text-decoration: underline;
+}
+.tabs a {
+	border-bottom-color: #4E4F52;
+	text-decoration: none;
+}
+.tabs a:hover {
+	border-bottom-color: #eee;
+	color: #eee;
+}
+.box {
+	background-color: #2E3136;
+	margin-bottom: 1.5rem;
+}
+.table {
+	background-color: inherit;
+}
+.table.is-hoverable tbody tr:not(.is-selected):hover {
+	background-color: rgba(0,0,0,0.1);
+}
+.table, .table th, .table thead th {
+	color: #eee;
+	font-weight: bold;
+	letter-spacing: 0px;
+}
+.table > tbody > tr {
+	cursor: pointer;
+}
+table td:not([align]), table th:not([align]) {
+	text-align: center;
+}
+.table th:not([align]) {
+	font-size: 1.2rem;
+	text-align: center;
+}
+.table > tbody > tr > th:not([align]) {
+	font-size: 1rem;
+}
+.table td, .table th {
+	padding-bottom: calc(.5em - 5px);
+}
+.table td, .table th, .tabs ul {
+	border-color: #393C42;
+}
+.select select, .select select:hover, option {
+	background-color: #393C42;
+	color: #eee;
+	border-color: transparent;
+}
+.select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after {
+	border-color: #3273dc;
+}
+#table-img {
+	max-width: 80%;
+	max-height: 10rem;
+}
+.title {
+	color: #eee;
+	font-weight: bold;
 	letter-spacing: -1px;
 }
+
+.section.is-footer {
+	background-color: #2E3136;
+	width: 100%;
+	text-align: center;
+	color: #eee;
+}
+.is-heart {
+	color: #f14668;
+}
+.icons a {
+	color: #fff;
+	font-size: 1.5rem;
+	margin-right: 0.25rem;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.icons a.end {
+	margin-right: 0;
+}
+.icons a:hover {
+	text-decoration: none;
+}
+
+/* ----------------------------------------- */
+
+
+body {
+	font-family: Whitney;
+}
+
+
+.tabs:not(:last-child) {
+	margin-bottom: 0;
+}
+.table {
+	table-layout: fixed;
+}
+.select, .select > select {
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
 
 /* Font */
 @font-face {
