@@ -26,10 +26,10 @@ a:hover {
 	text-decoration: none;
 	font-weight: bold;
 	
-	-webkit-transition : border .25s ease-out, color .25s ease-out;
-	-moz-transition : border .25s ease-out, color .25s ease-out;
-	-o-transition : border .25s ease-out, color .25s ease-out;
-	transition : border .25s ease-out, color .25s ease-out;
+	-webkit-transition: border .25s ease-out, color .25s ease-out;
+	-moz-transition: border .25s ease-out, color .25s ease-out;
+	-o-transition: border .25s ease-out, color .25s ease-out;
+	transition: border .25s ease-out, color .25s ease-out;
 }
 .tabs a:hover {
 	border-bottom-color: #777;
@@ -101,22 +101,21 @@ table td:not([align]), table th:not([align]) {
 	color: #f14668;
 }
 .icons a {
-	color: #fff;
+	color: #eee;
 	font-size: 1.5rem;
 	margin-right: 0.25rem;
 	
-	-webkit-touch-callout: none;
-    -webkit-user-select: none;
-     -khtml-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+	transition: color .2s ease-out;
 }
 .icons a.end {
 	margin-right: 0;
 }
 .icons a:hover {
 	text-decoration: none;
+	color: var(--primary-color);
 }
 
 /* ----------------------------------------- */

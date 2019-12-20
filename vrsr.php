@@ -38,7 +38,7 @@
 								</select>
 							</div>
 							<img id="table-img" src="">
-							<p>View on <a id="src-url" href="" target="_blank">Speedrun.com</a></p>
+							<p><a id="src-url" href="" target="_blank">View on Speedrun.com</a></p>
 						</div>
 					</div>
 					<div class="column is-9">
