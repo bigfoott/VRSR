@@ -1,6 +1,7 @@
 [
 	{
 		"id": "boneworks",
+		"site_id": "bw",
 		"name": "BONEWORKS",
 		"hardware_var": "r8romd08",
 		"color": "#E6B400",
@@ -27,10 +28,12 @@
 			"w20gg4jk": 1,
 			"9kvooee2": 2,
 			"9d844qqk": 3
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "jet_island",
+		"site_id": "ji",
 		"name": "Jet Island",
 		"hardware_var": "",
 		"color": "#ad4c50",
@@ -62,10 +65,12 @@
 			"jdrez45k": 2,
 			"q257nmjd": 3,
 			"wdm8n0o2": 4
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "job_simulator",
+		"site_id": "js",
 		"name": "Job Simulator",
 		"hardware_var": "",
 		"color": "#009100",
@@ -102,10 +107,12 @@
 			"rklqrzn2": 3,
 			"ndxm40r2": 4,
 			"w20w355d": 5
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "lone_echo",
+		"site_id": "le",
 		"name": "Lone Echo",
 		"hardware_var": "",
 		"color": "#278f96",
@@ -117,10 +124,12 @@
 		],
 		"board_indexes": {
 			"zd3605ed": 0
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "shvr",
+		"site_id": "shvr",
 		"name": "SUPERHOT VR",
 		"hardware_var": "",
 		"color": "#E62205",
@@ -142,10 +151,46 @@
 			"5dwpw3nk": 0,
 			"ndxp1oo2": 1,
 			"7dgr06xk": 2
+		},
+		"ignored_var_values": null
+	},
+	{
+		"id": "surgeon_simulator_experience_reality",
+		"site_id": "sser",
+		"name": "Surgeon Simulator: E.R.",
+		"hardware_var": "",
+		"color": "#C2252C",
+		"boards": [
+			{
+				"name": "Bob 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/xd13x58k"
+			},
+			{
+				"name": "Ambulance 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/vdoopq6d"
+			},
+			{
+				"name": "Space 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/q25qpzy2"
+			},
+			{
+				"name": "True 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/jdrx04gd "
+			}
+		],
+		"board_indexes": {
+			"xd13x58k": 0,
+			"vdoopq6d": 1,
+			"q25qpzy2": 2,
+			"jdrx04gd": 3
+		},
+		"ignored_var_values": {
+			"wle63j48": "81p7vnk1"
 		}
 	},
 	{
 		"id": "the_climb",
+		"site_id": "tc",
 		"name": "The Climb",
 		"hardware_var": "",
 		"color": "#00B3FF",
@@ -177,10 +222,12 @@
 			"n2y5l0zk": 2,
 			"5dw53led": 3,
 			"7kjp0enk": 4
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "talos_principle_vr",
+		"site_id": "tpvr",
 		"name": "The Talos Principle VR",
 		"hardware_var": "kn0zqxz8",
 		"color": "#26BCC6",
@@ -207,10 +254,12 @@
 			"q257yq8d": 1,
 			"02ql5opk": 2,
 			"jdr7zxx2": 3
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "to_the_top",
+		"site_id": "ttt",
 		"name": "To The Top",
 		"hardware_var": "e8mmk2v8",
 		"color": "#FF1F1F",
@@ -232,10 +281,16 @@
 			"9d8jwq6k": 0,
 			"jdz8q83d": 1,
 			"02qoqojk": 2
+		},
+		"ignored_var_values": {
+			"ylq9gyw8": "jq62zevl",
+			"ylq9gyw8": "5lmw42yq",
+			"ylq9gyw8": "rqvzr651"
 		}
 	},
 	{
 		"id": "vacation_simulator",
+		"site_id": "vs",
 		"name": "Vacation Simulator",
 		"hardware_var": "",
 		"color": "#FDEA8E",
@@ -252,10 +307,12 @@
 		"board_indexes": {
 			"vdom5e92": 0,
 			"wkpm5w8k": 1
-		}
+		},
+		"ignored_var_values": null
 	},
 	{
 		"id": "vvr",
+		"site_id": "vvr",
 		"name": "Virtual Virtual Reality",
 		"hardware_var": "",
 		"color": "#B214FF",
@@ -267,6 +324,7 @@
 		],
 		"board_indexes": {
 			"wkpm3gwk": 0
-		}
+		},
+		"ignored_var_values": null
 	}
 ]

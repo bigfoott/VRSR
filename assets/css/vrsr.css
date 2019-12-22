@@ -27,7 +27,6 @@ a:hover {
 }
 .tabs a {
 	color: #777;
-	border-bottom-color: #4E4F52;
 	text-decoration: none;
 	font-weight: bold;
 	
@@ -35,10 +34,12 @@ a:hover {
 	-moz-transition: border .25s ease-out, color .25s ease-out;
 	-o-transition: border .25s ease-out, color .25s ease-out;
 	transition: border .25s ease-out, color .25s ease-out;
+	
 }
 .tabs a:hover {
-	border-bottom-color: #777;
+	border-bottom-color: #393C42;
 	color: #eee;
+	
 }
 .tabs li.is-active a {
 	color: var(--primary-color);

@@ -28,7 +28,7 @@ function onLoad()
 		{
 			for (var i = 0; i < json.length; i++)
 			{
-				if ("#" + json[i].id == window.location.hash)
+				if ("#" + json[i].site_id == window.location.hash)
 				{
 					document.getElementById("dropdown-select").value = i;
 					loadGame(i);
@@ -70,24 +70,6 @@ function loadGame(id)
 				
 				var index = json[id].board_indexes[j.data.category];
 				
-				var tab = tabTemplate;
-				tabs.innerHTML += tab.replace("[ID]", index).replace("[ID]", index).replace("[NAME]", json[id].boards[index].name);
-				
-				var tosort = tabs.children;
-				var listitems = [];
-				for (var i = 0; i < tosort.length; i++) {
-					listitems.push(tosort.item(i));
-				}
-				listitems.sort(function(a, b) {
-					var compA = a.getAttribute('id').toUpperCase();
-					var compB = b.getAttribute('id').toUpperCase();
-					return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
-				});
-
-				tabs.innerHTML = '';
-				for (var i = 0; i < listitems.length; i++)
-					tabs.appendChild(listitems[i]);
-				
 				var players = {};
 				for (var k = 0; k < j.data.players.data.length; k++)
 				{ 
@@ -108,9 +90,32 @@ function loadGame(id)
 					elem = "table-platform";
 				document.getElementById("style").innerText = "." + elem + " { display: none; }";
 				
+				var addedRuns = 0;
 				for (var k = 0; k < jruns.length; k++)
 				{
 					if (jruns[k].place == 0) continue;
+					
+					var hasIgnoredValue = false ;
+					if (json[id].ignored_var_values != null)
+					{
+						if (jruns[k].run.values != null)
+						{
+							var p = json[id].ignored_var_values;
+							for (var key in p)
+							{
+								if (p.hasOwnProperty(key))
+								{
+									if (jruns[k].run.values[key] == p[key])
+									{
+										hasIgnoredValue = true;
+										break;
+									}
+								}
+							}
+							if (hasIgnoredValue)
+								continue;
+						}
+					}
 					
 					var run = runTemplate;
 					
@@ -154,6 +159,28 @@ function loadGame(id)
 							 .replace("[DATE]", '<p title="' + date.toLocaleDateString("en-US", options) + '">' + timeAgo(date) + '</p>');				
 					
 					runs += run;
+					addedRuns++;
+				}
+				
+				if (addedRuns > 0)
+				{
+					var tab = tabTemplate;
+					tabs.innerHTML += tab.replace("[ID]", index).replace("[ID]", index).replace("[NAME]", json[id].boards[index].name);
+					
+					var tosort = tabs.children;
+					var listitems = [];
+					for (var i = 0; i < tosort.length; i++) {
+						listitems.push(tosort.item(i));
+					}
+					listitems.sort(function(a, b) {
+						var compA = a.getAttribute('id').toUpperCase();
+						var compB = b.getAttribute('id').toUpperCase();
+						return (compA < compB) ? -1 : (compA > compB) ? 1 : 0;
+					});
+					
+					tabs.innerHTML = '';
+					for (var i = 0; i < listitems.length; i++)
+						tabs.appendChild(listitems[i]);
 				}
 				
 				table = table.replace("[ID]", index).replace("[RUNS]", runs);
@@ -176,8 +203,8 @@ function loadGame(id)
 	}
 	
 	document.getElementById("table-img").src = imgTemplate.replace("[ID]", json[id].id);
+	window.location.hash = "#" + json[id].site_id;
 	document.getElementById("src-url").href = "https://www.speedrun.com/" + json[id].id;
-	window.location.hash = "#" + json[id].id;
 	
 	loadTab(0);
 }
@@ -189,7 +216,7 @@ function loadTab(index)
 	{
 		for (var i = 0; i < totalTabs; i++)
 		{
-			if (document.getElementById("tbody-" + i))
+			if (document.getElementById("tbody-" + i) && document.getElementById("tab-" + i))
 			{
 				document.getElementById("tbody-" + i).style.display = "none";
 				document.getElementById("tab-" + i).classList.remove("is-active");
