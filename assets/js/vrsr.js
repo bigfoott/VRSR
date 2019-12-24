@@ -10,6 +10,8 @@ var totalTabs;
 
 var root;
 
+var justChangedMode;
+
 function onLoad()
 {
 	root = document.documentElement;
@@ -55,6 +57,8 @@ function loadType(type)
 				dropdown.innerHTML += "<option value=\""+i+"\">" + json[i].name + "</option>";
 			}
 			
+			justChangedMode = true;
+			
 			if (window.location.hash)
 			{
 				for (var i = 0; i < json.length; i++)
@@ -68,6 +72,7 @@ function loadType(type)
 				}
 			}
 			loadGame(0);
+			
 		});
 	}
 	else
@@ -87,6 +92,8 @@ function loadType(type)
 			{
 				dropdown.innerHTML += "<option value=\""+i+"\">" + json[i].name + "</option>";
 			}
+			
+			justChangedMode = true;
 			
 			if (window.location.hash)
 			{
@@ -306,8 +313,10 @@ function loadGameLevels(levelindex)
 		totalTabs = json[id].levels.length;
 	}
 	
-	if (lastId !== id)
+	if (lastId !== id || justChangedMode)
 	{
+		justChangedMode = false;
+		
 		var levelSelect = document.getElementById("level-select");
 		levelSelect.innerHTML = '';
 		for (var i = 0; i < json[id].levels.length; i++)
