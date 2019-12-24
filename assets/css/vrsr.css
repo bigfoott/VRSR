@@ -92,6 +92,13 @@ table td:not([align]), table th:not([align]) {
 }
 #table-img {
 	max-height: 10rem;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .title {
 	color: #eee;
@@ -126,8 +133,95 @@ table td:not([align]), table th:not([align]) {
 	color: var(--primary-color);
 }
 
-/* ----------------------------------------- */
+#level-select-cols, #level-select-cols > div > .select  {
+	margin-bottom: 0;
+}
 
+/* ----------------------------------------- */
+.switch-container {
+	position: relative;
+	line-height: 1.25em;
+	margin-bottom: 1.25rem;
+}
+#switch-left, #switch-right {
+	width: 5rem;
+	position: absolute;
+	top: 0;
+	color: #777;
+	
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+	
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#switch-left {
+	left: -5.5rem;
+	text-align: right;
+}
+#switch-right {
+	right: -5.5rem;
+	text-align: left;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color);
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+  border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 12px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #393C42;
+  -webkit-transition: .4s;
+  transition: .4s;
+  
+  border-radius: 50%;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+/* ----------------------------------------- */
 
 body {
 	font-family: Whitney;

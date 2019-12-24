@@ -36,8 +36,16 @@
 					<div class="column is-3 has-text-centered">
 						<div class="box">
 							<div class="select">
-								<select id="dropdown-select" onchange="loadGame(this.value)">
+								<select id="dropdown-select" onchange="dropdownChange(this.value)">
 								</select>
+							</div>
+							<div class="switch-container">
+								<label class="switch">
+									<p id="switch-left">Full Game</p>
+									<input type="checkbox" id="type-switch" onclick="handleSwitchClick(this);">
+									<span class="slider"></span>
+									<p id="switch-right">Ind. Levels</p>
+								</label>
 							</div>
 							<div class="table-img-container"><img id="table-img" src=""></div>
 							<p><a id="src-url" href="" target="_blank">View on Speedrun.com</a></p>
@@ -45,6 +53,20 @@
 					</div>
 					<div class="column is-9">
 						<div class="box">
+							<div class="columns is-multiline" id="level-select-cols" style="display: block;">
+								<div class="column is-12" id="il-warning">
+									<div class="notification is-danger">
+										<button class="delete" onclick="closeILWarning();"></button>
+										<b>NOTICE</b>:  Due to SRC API restrictions, only the top three runs for each category for ILs will be displayed.
+									</div>
+								</div>
+								<div class="column is-4">
+									<div class="select">
+										<select id="level-select" onchange="loadGameLevels(this.value)">
+										</select>
+									</div>
+								</div>
+							</div>
 							<div class="tabs">
 								<ul id="tabs"></ul>
 							</div>

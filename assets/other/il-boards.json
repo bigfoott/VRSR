@@ -1,0 +1,545 @@
+[
+	{
+		"id": "boneworks",
+		"site_id": "bw",
+		"name": "BONEWORKS",
+		"hardware_var": "r8romd08",
+		"color": "#E6B400",
+		"levels": [
+			{
+				"name": "Breakroom",
+				"link": "https://www.speedrun.com/api/v1/levels/xd13m6z9/records"
+			},
+			{
+				"name": "Museum",
+				"link": "https://www.speedrun.com/api/v1/levels/ewpz3ey9/records"
+			},
+			{
+				"name": "Streets",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mr6yzw/records"
+			},
+			{
+				"name": "Runoff",
+				"link": "https://www.speedrun.com/api/v1/levels/5wknx8vw/records"
+			},
+			{
+				"name": "Sewers",
+				"link": "https://www.speedrun.com/api/v1/levels/5928k379/records"
+			},
+			{
+				"name": "Warehouse",
+				"link": "https://www.speedrun.com/api/v1/levels/xd4y1nqd/records"
+			},
+			{
+				"name": "Central Station",
+				"link": "https://www.speedrun.com/api/v1/levels/29vl6jqw/records"
+			},
+			{
+				"name": "Tower",
+				"link": "https://www.speedrun.com/api/v1/levels/xd021lm9/records"
+			},
+			{
+				"name": "Time Tower",
+				"link": "https://www.speedrun.com/api/v1/levels/rw6l1rpw/records"
+			},
+			{
+				"name": "Dungeon",
+				"link": "https://www.speedrun.com/api/v1/levels/n93n1n2w/records"
+			},
+			{
+				"name": "Arena",
+				"link": "https://www.speedrun.com/api/v1/levels/z98z3zr9/records"
+			},
+			{
+				"name": "Throne Room",
+				"link": "https://www.speedrun.com/api/v1/levels/rdnl7l5w/records"
+			}
+		],
+		"level_indexes": {
+			"xd13m6z9": 0,
+			"ewpz3ey9": 1,
+			"y9mr6yzw": 2,
+			"5wknx8vw": 3,
+			"5928k379": 4,
+			"xd4y1nqd": 5,
+			"29vl6jqw": 6,
+			"xd021lm9": 7,
+			"rw6l1rpw": 8,
+			"n93n1n2w": 9,
+			"z98z3zr9": 10,
+			"rdnl7l5w": 11
+		},
+		"categories": [
+			{
+				"name": "Any%",
+				"id": "q25ggzjd"
+			},
+			{
+				"name": "Glichless%",
+				"id": "q25ggzjd"
+			},
+			{
+				"name": "Flight%",
+				"id": "q25ggzjd"
+			},
+			{
+				"name": "NewGame+",
+				"id": "q25ggzjd"
+			}
+		]
+	},
+	{
+		"id": "shvr",
+		"site_id": "shvr",
+		"name": "SUPERHOT VR",
+		"hardware_var": "",
+		"color": "#E62205",
+		"levels": [
+			{
+				"name": "Airport",
+				"link": "https://www.speedrun.com/api/v1/levels/z988ok79/records"
+			},
+			{
+				"name": "Mall",
+				"link": "https://www.speedrun.com/api/v1/levels/rdnpm1n9/records"
+			},
+			{
+				"name": "Chinatown",
+				"link": "https://www.speedrun.com/api/v1/levels/ldyprzjd/records"
+			},
+			{
+				"name": "Helipad",
+				"link": "https://www.speedrun.com/api/v1/levels/gdrq0389/records"
+			},
+			{
+				"name": "Dark Alley",
+				"link": "https://www.speedrun.com/api/v1/levels/ywe8veqw/records"
+			},
+			{
+				"name": "Graveyard",
+				"link": "https://www.speedrun.com/api/v1/levels/69z4lg6w/records"
+			},
+			{
+				"name": "Corpo Office",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g3mgqw/records"
+			},
+			{
+				"name": "Construction Yard",
+				"link": "https://www.speedrun.com/api/v1/levels/o9xlye69/records"
+			},
+			{
+				"name": "Foundry",
+				"link": "https://www.speedrun.com/api/v1/levels/4958q129/records"
+			},
+			{
+				"name": "Airplane",
+				"link": "https://www.speedrun.com/api/v1/levels/rdq1mkm9/records"
+			},
+			{
+				"name": "Desperados Bar",
+				"link": "https://www.speedrun.com/api/v1/levels/5d73jm59/records"
+			},
+			{
+				"name": "Outer Heaven",
+				"link": "https://www.speedrun.com/api/v1/levels/kwjekqr9/records"
+			},
+			{
+				"name": "Restaurant",
+				"link": "https://www.speedrun.com/api/v1/levels/owo2mpvd/records"
+			},
+			{
+				"name": "The Pyramid",
+				"link": "https://www.speedrun.com/api/v1/levels/xd15zqqw/records"
+			}
+		],
+		"level_indexes": {
+			"z988ok79": 0,
+			"rdnpm1n9": 1,
+			"ldyprzjd": 2,
+			"gdrq0389": 3,
+			"ywe8veqw": 4,
+			"69z4lg6w": 5,
+			"r9g3mgqw": 6,
+			"o9xlye69": 7,
+			"4958q129": 8,
+			"rdq1mkm9": 9,
+			"5d73jm59": 10,
+			"kwjekqr9": 11,
+			"owo2mpvd": 12,
+			"xd15zqqw ": 13
+		},
+		"categories": [
+			{
+				"name": "Real Time",
+				"id": "jdr1r1n2"
+			},
+			{
+				"name": "Game Time",
+				"id": "jdzplprk"
+			}
+		]
+	},
+	{
+		"id": "surgeon_simulator_experience_reality",
+		"site_id": "sser",
+		"name": "Surgeon Simulator: E.R.",
+		"hardware_var": "",
+		"color": "#C2252C",
+		"levels": [
+			{
+				"name": "Heart Transplant",
+				"link": "https://www.speedrun.com/api/v1/levels/owo6gp3w/records"
+			},
+			{
+				"name": "Kidney Transplant",
+				"link": "https://www.speedrun.com/api/v1/levels/xd12vqyw/records"
+			},
+			{
+				"name": "Brain Transplant",
+				"link": "https://www.speedrun.com/api/v1/levels/ewpxk64d/records"
+			},
+			{
+				"name": "Eye Transplant",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mxko0w/records"
+			},
+			{
+				"name": "Teeth Transplant",
+				"link": "https://www.speedrun.com/api/v1/levels/5wk6g7x9/records"
+			}
+		],
+		"level_indexes": {
+			"owo6gp3w": 0,
+			"xd12vqyw": 1,
+			"ewpxk64d": 2,
+			"y9mxko0w": 3,
+			"5wk6g7x9": 4
+		},
+		"categories": [
+			{
+				"name": "Normal",
+				"id": "9d865l72"
+			},
+			{
+				"name": "Ambulance",
+				"id": "xd1ew5r2"
+			},
+			{
+				"name": "Space",
+				"id": "zd365qyd"
+			}
+		]
+	},
+	{
+		"id": "the_climb",
+		"site_id": "tc",
+		"name": "The Climb",
+		"hardware_var": "",
+		"color": "#00B3FF",
+		"levels": [
+			{
+				"name": "Advanced Tutorial",
+				"link": "https://www.speedrun.com/api/v1/levels/kwjzp8r9/records"
+			},
+			{
+				"name": "Zen Bay",
+				"link": "https://www.speedrun.com/api/v1/levels/xd12x6qw/records"
+			},
+			{
+				"name": "Temle Bay",
+				"link": "https://www.speedrun.com/api/v1/levels/ewpxreld/records"
+			},
+			{
+				"name": "Flame Bay",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mx8ylw/records"
+			},
+			{
+				"name": "Dragon Tooth",
+				"link": "https://www.speedrun.com/api/v1/levels/5wk6p859/records"
+			},
+			{
+				"name": "Tiger Rock",
+				"link": "https://www.speedrun.com/api/v1/levels/592q53g9/records"
+			},
+			{
+				"name": "Old Bones",
+				"link": "https://www.speedrun.com/api/v1/levels/29v72l19/records"
+			},
+			{
+				"name": "Snow Bird",
+				"link": "https://www.speedrun.com/api/v1/levels/xd42xy0w/records"
+			},
+			{
+				"name": "Ice Breaker",
+				"link": "https://www.speedrun.com/api/v1/levels/xd0qx209/records"
+			},
+			{
+				"name": "Icy Swing",
+				"link": "https://www.speedrun.com/api/v1/levels/rw6o3lnw/records"
+			},
+			{
+				"name": "Cold Spit",
+				"link": "https://www.speedrun.com/api/v1/levels/n934on7d/records"
+			},
+			{
+				"name": "Dust Winds",
+				"link": "https://www.speedrun.com/api/v1/levels/z987nz7w/records"
+			},
+			{
+				"name": "Red Rock",
+				"link": "https://www.speedrun.com/api/v1/levels/rdnznlnd/records"
+			},
+			{
+				"name": "High Sky",
+				"link": "https://www.speedrun.com/api/v1/levels/ldyg25jd/records"
+			},
+			{
+				"name": "Red Apex",
+				"link": "https://www.speedrun.com/api/v1/levels/gdrx288d/records"
+			},
+			{
+				"name": "Breakpoint Path",
+				"link": "https://www.speedrun.com/api/v1/levels/nwlo3ypw/records"
+			},
+			{
+				"name": "Old Mine",
+				"link": "https://www.speedrun.com/api/v1/levels/ywe5ljqw/records"
+			},
+			{
+				"name": "Skydive Valley",
+				"link": "https://www.speedrun.com/api/v1/levels/69z2zq69/records"
+			},
+			{
+				"name": "Dark Rock",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g4xjq9/records"
+			},
+			{
+				"name": "Tough Choice",
+				"link": "https://www.speedrun.com/api/v1/levels/o9x74z6d/records"
+			},
+			{
+				"name": "Green Valley",
+				"link": "https://www.speedrun.com/api/v1/levels/49554r29/records"
+			}
+		],
+		"level_indexes": {
+			"5d748e5d": 0,
+			"kwjzp8r9": 1 ,
+			"xd12x6qw": 2,
+			"ewpxreld": 3,
+			"y9mx8ylw": 4,
+			"5wk6p859": 5,
+			"592q53g9": 6,
+			"29v72l19": 7,
+			"xd42xy0w": 8,
+			"xd0qx209": 9,
+			"rw6o3lnw": 10,
+			"n934on7d": 11,
+			"z987nz7w": 12,
+			"rdnznlnd": 13,
+			"ldyg25jd": 14,
+			"gdrx288d": 15,
+			"nwlo3ypw": 16,
+			"ywe5ljqw": 17,
+			"69z2zq69": 18,
+			"r9g4xjq9": 19,
+			"o9x74z6d": 20,
+			"49554r29": 21
+		},
+		"categories": [
+			{
+				"name": "Individual Level Any%",
+				"id": "xk9gz44d"
+			}
+		]
+	},
+	{
+		"id": "to_the_top",
+		"site_id": "ttt",
+		"name": "To The Top",
+		"hardware_var": "e8mmk2v8",
+		"color": "#FF1F1F",
+		"levels": [
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			},
+			{
+				"name": "",
+				"link": ""
+			}
+		],
+		"level_indexes": {
+			"": 0
+		},
+		"categories": [
+			{
+				"name": "",
+				"id": ""
+			}
+		]
+	},
+	{
+		"id": "vacation_simulator",
+		"site_id": "vs",
+		"name": "Vacation Simulator",
+		"hardware_var": "",
+		"color": "#FDEA8E",
+		"levels": [
+			{
+				"name": "Beach",
+				"link": "https://www.speedrun.com/api/v1/levels/69zxe7ld/records"
+			},
+			{
+				"name": "Forest",
+				"link": "https://www.speedrun.com/api/v1/levels/r9grq65w/records"
+			},
+			{
+				"name": "Mountain",
+				"link": "https://www.speedrun.com/api/v1/levels/o9xkr60w/records"
+			}
+		],
+		"level_indexes": {
+			"69zxe7ld": 0,
+			"r9grq65w": 1,
+			"o9xkr60w": 2
+		},
+		"categories": [
+			{
+				"name": "100%",
+				"id": "5dw7nelk"
+			}
+		]
+	}
+]
