@@ -1,6 +1,8 @@
 var json;
 var currentType;
 
+var lastId;
+
 var tabs;
 var mainTable;
 
@@ -213,7 +215,7 @@ function loadGame(id)
 					var options = { year: 'numeric', month: 'long', day: 'numeric' };
 					
 					run = run.replace("[RUNLINK]", jruns[k].run.weblink)
-							 .replace("[PLACE]", nth(jruns[k].place))
+							 .replace("[PLACE]", nth(addedRuns + 1))
 							 .replace("[USER]", player)
 							 .replace("[TIME]", time)
 							 .replace("[HARDWARE]", hardware)
@@ -302,23 +304,27 @@ function loadGameLevels(levelindex)
 	{
 		tabs.innerHTML = '';
 		totalTabs = json[id].levels.length;
-		
+	}
+	
+	if (lastId !== id)
+	{
 		var levelSelect = document.getElementById("level-select");
 		levelSelect.innerHTML = '';
 		for (var i = 0; i < json[id].levels.length; i++)
 		{
 			levelSelect.innerHTML += '<option value="' + i + '">' + json[id].levels[i].name + '</option>';
 		}
+		
+		lastId = id;
 	}
 	
-	
+	console.log(levelindex);
 	get(json[id].levels[levelindex].link + "?embed=players,platforms,variables")
 	.then((data) => {
 		var j = JSON.parse(data);
 		
 		for (var i = 0; i < j.data.length; i++)
 		{
-			console.log("main loop: " + i);
 			var jruns = j.data[i].runs;
 			if (jruns.length !== 0)
 			{
@@ -406,7 +412,7 @@ function loadGameLevels(levelindex)
 					var options = { year: 'numeric', month: 'long', day: 'numeric' };
 					
 					run = run.replace("[RUNLINK]", jruns[k].run.weblink)
-							 .replace("[PLACE]", nth(jruns[k].place))
+							 .replace("[PLACE]", nth(addedRuns + 1))
 							 .replace("[USER]", player)
 							 .replace("[TIME]", time)
 							 .replace("[HARDWARE]", hardware)
@@ -485,7 +491,7 @@ function loadTab(index)
 function dropdownChange(value)
 {
 	if (currentType == "game") loadGame(value);
-	else loadGameLevels(value);
+	else loadGameLevels(0);
 }
 
 function handleSwitchClick(e)

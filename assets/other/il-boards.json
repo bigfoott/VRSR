@@ -75,7 +75,7 @@
 				"id": "q25ggzjd"
 			},
 			{
-				"name": "Glichless%",
+				"name": "Glitchless%",
 				"id": "q25ggzjd"
 			},
 			{
@@ -86,7 +86,8 @@
 				"name": "NewGame+",
 				"id": "q25ggzjd"
 			}
-		]
+		],
+		"ignored_var_values": null
 	},
 	{
 		"id": "shvr",
@@ -177,7 +178,8 @@
 				"name": "Game Time",
 				"id": "jdzplprk"
 			}
-		]
+		],
+		"ignored_var_values": null
 	},
 	{
 		"id": "surgeon_simulator_experience_reality",
@@ -227,7 +229,8 @@
 				"name": "Space",
 				"id": "zd365qyd"
 			}
-		]
+		],
+		"ignored_var_values": null
 	},
 	{
 		"id": "the_climb",
@@ -350,7 +353,8 @@
 				"name": "Individual Level Any%",
 				"id": "xk9gz44d"
 			}
-		]
+		],
+		"ignored_var_values": null
 	},
 	{
 		"id": "to_the_top",
@@ -508,7 +512,8 @@
 				"name": "",
 				"id": ""
 			}
-		]
+		],
+		"ignored_var_values": null
 	},
 	{
 		"id": "vacation_simulator",
@@ -540,6 +545,9 @@
 				"name": "100%",
 				"id": "5dw7nelk"
 			}
-		]
+		],
+		"ignored_var_values": {
+			"onv2x20l": "9qjxzogl"
+		}
 	}
 ]
