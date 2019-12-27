@@ -364,153 +364,199 @@
 		"color": "#FF1F1F",
 		"levels": [
 			{
-				"name": "",
-				"link": ""
+				"name": "Intro",
+				"link": "https://www.speedrun.com/api/v1/levels/ldypm3zd/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Getting Started",
+				"link": "https://www.speedrun.com/api/v1/levels/gdrq5yz9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "To The Top",
+				"link": "https://www.speedrun.com/api/v1/levels/nwl7r2r9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Over Hangs",
+				"link": "https://www.speedrun.com/api/v1/levels/ywe86qrw/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Slide",
+				"link": "https://www.speedrun.com/api/v1/levels/69z4k8ow/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Rooftop",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g3vnkw/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Wall Run",
+				"link": "https://www.speedrun.com/api/v1/levels/o9xlpo19/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "The Bridge",
+				"link": "https://www.speedrun.com/api/v1/levels/49587zj9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Rooftop Park",
+				"link": "https://www.speedrun.com/api/v1/levels/rdq1xo19/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Spin",
+				"link": "https://www.speedrun.com/api/v1/levels/5d73oxv9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Dead Mans Dive",
+				"link": "https://www.speedrun.com/api/v1/levels/kwjen6z9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Cracks",
+				"link": "https://www.speedrun.com/api/v1/levels/owo2z5yd/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Ruins",
+				"link": "https://www.speedrun.com/api/v1/levels/xd15gy6w/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "The Shocker",
+				"link": "https://www.speedrun.com/api/v1/levels/ewpqgoz9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Giant Robot",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mplg19/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Convoy",
+				"link": "https://www.speedrun.com/api/v1/levels/5wkryeq9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Cube Rotate",
+				"link": "https://www.speedrun.com/api/v1/levels/592oxrrd/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Honey",
+				"link": "https://www.speedrun.com/api/v1/levels/29vko0nd/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Cannon",
+				"link": "https://www.speedrun.com/api/v1/levels/xd43qep9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "RR Crossing",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g3vl2w/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Sky Jumps",
+				"link": "https://www.speedrun.com/api/v1/levels/o9xlpg79/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Lock and Key",
+				"link": "https://www.speedrun.com/api/v1/levels/49587249/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Skate",
+				"link": "https://www.speedrun.com/api/v1/levels/rdq1x8g9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Skate Part",
+				"link": "https://www.speedrun.com/api/v1/levels/5d73o1e9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Fly",
+				"link": "https://www.speedrun.com/api/v1/levels/kwjeng19/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Piston Central",
+				"link": "https://www.speedrun.com/api/v1/levels/owo2zj3d/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "The Ringer",
+				"link": "https://www.speedrun.com/api/v1/levels/xd15gmyw/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "The Chop Shop",
+				"link": "https://www.speedrun.com/api/v1/levels/ewpqg349/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Rock Monsta",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mpl609/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Credits",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g3eyqw/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Pick a Path",
+				"link": "https://www.speedrun.com/api/v1/levels/ldyy2rrd/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Break It",
+				"link": "https://www.speedrun.com/api/v1/levels/gdre20l9/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Spikes",
+				"link": "https://www.speedrun.com/api/v1/levels/nwll3mew/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Amaze",
+				"link": "https://www.speedrun.com/api/v1/levels/ywe1lv7d/records"
 			},
 			{
-				"name": "",
-				"link": ""
+				"name": "Kitchen Sink",
+				"link": "https://www.speedrun.com/api/v1/levels/69z3zlgd/records"
 			}
 		],
 		"level_indexes": {
-			"": 0
+			"ldypm3zd": 0,
+			"gdrq5yz9": 1,
+			"nwl7r2r9": 2,
+			"ywe86qrw": 3,
+			"69z4k8ow": 4,
+			"r9g3vnkw": 5,
+			"o9xlpo19": 6,
+			"49587zj9": 7,
+			"rdq1xo19": 8,
+			"5d73oxv9": 9,
+			"kwjen6z9": 10,
+			"owo2z5yd": 11,
+			"xd15gy6w": 12,
+			"ewpqgoz9": 13,
+			"y9mplg19": 14,
+			"5wkryeq9": 15,
+			"592oxrrd": 16,
+			"29vko0nd": 17,
+			"xd43qep9": 18,
+			"r9g3vl2w": 19,
+			"o9xlpg79": 20,
+			"49587249": 21,
+			"rdq1x8g9": 22,
+			"5d73o1e9": 23,
+			"kwjeng19": 24,
+			"owo2zj3d": 25,
+			"xd15gmyw": 26,
+			"ewpqg349": 27,
+			"y9mpl609": 28,
+			"r9g3eyqw": 29,
+			"ldyy2rrd": 30,
+			"gdre20l9": 31,
+			"nwll3mew": 32,
+			"ywe1lv7d": 33,
+			"69z3zlgd": 34
 		},
 		"categories": [
 			{
-				"name": "",
-				"id": ""
+				"name": "SteamVR",
+				"id": "7kjzyend"
+			},
+			{
+				"name": "Oculus Home",
+				"id": "mke9946d"
+			},
+			{
+				"name": "PSVR",
+				"id": "9d8g68lk"
+			},
+			{
+				"name": "SteamVR Original Release",
+				"id": "xk9rreyk"
 			}
 		],
 		"ignored_var_values": null

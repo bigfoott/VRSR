@@ -41,7 +41,7 @@ function loadType(type)
 	currentType = type; 
 	if (type == "game")
 	{
-		//document.getElementById("level-select-cols").style.display = "none"; 
+		document.getElementById("level-select-cols").style.display = "none"; 
 		
 		document.getElementById("switch-left").style.color = "#eee";
 		document.getElementById("switch-right").style.color = "";
@@ -77,7 +77,7 @@ function loadType(type)
 	}
 	else
 	{
-		//document.getElementById("level-select-cols").style.display = "block"; 
+		document.getElementById("level-select-cols").style.display = "block"; 
 		
 		document.getElementById("switch-right").style.color = "#eee";
 		document.getElementById("switch-left").style.color = "";
@@ -275,7 +275,7 @@ function loadGame(id)
 	
 	document.getElementById("table-img").src = imgTemplate.replace("[ID]", json[id].id);
 	window.location.hash = "#" + json[id].site_id;
-	document.getElementById("src-url").href = "https://www.speedrun.com/" + json[id].id;
+	document.getElementById("src-url").href = "https://www.speedrun.com/" + json[id].id + "/full_game";
 	
 	loadTab(0);
 }
@@ -327,7 +327,6 @@ function loadGameLevels(levelindex)
 		lastId = id;
 	}
 	
-	console.log(levelindex);
 	get(json[id].levels[levelindex].link + "?embed=players,platforms,variables")
 	.then((data) => {
 		var j = JSON.parse(data);

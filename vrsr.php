@@ -53,7 +53,7 @@
 					</div>
 					<div class="column is-9">
 						<div class="box">
-							<div class="columns is-multiline" id="level-select-cols" style="display: block;">
+							<div class="columns is-multiline" id="level-select-cols" style="display: none;">
 								<div class="column is-12" id="il-warning">
 									<div class="notification is-danger">
 										<button class="delete" onclick="closeILWarning();"></button>
