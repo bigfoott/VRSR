@@ -24,11 +24,13 @@
 				<div class="box">
 					<h1 class="title is-2">VR Speedrunning Leaderboards</h1>
 					<p>A central hub to view the leaderboards for the largest VR speedgames.</p>
+					<p>If you'd like to hang out and discuss VR speedrunning, consider joining the <a href="https://discord.gg/7PKWZuW">VR Speedrunning Discord server</a>!</p>
+					<br>
 					<p>Only main categories with runs are displayed. If there is a game or category that you believe belongs here, ping me (bigfoot#0001) in the VR Speedrunning Discord server.</p>
 					<p>In order to minimize the amount of API calls to SRC, some details are hard-coded. If changes are made to games or categories that don't reflect here, ping me and I will fix it.</p>
 					<br>
 					<p>For the latest VR world records, check out the <a href="https://twitter.com/VRSpeedruns">VR Speedruns Twitter bot</a>!</p>
-					<p>All the code is open source and available on Github. For this site, check out <a href="https://github.com/bigfoott/VRSR">bigfoott/VRSR</a> and for the bot, check out <a href="https://github.com/bigfoott/VRSpeedrunsBot">bigfoott/VRSpeedrunsBot</a>.</p>
+					<p>All the code is open source and available on Github. For this site, check out <a href="https://github.com/bigfoott/VRSR">bigfoott/VRSR</a> and for the bot, check out <a href="https://github.com/bigfoott/VRSpeedrunsTwitterBot">bigfoott/VRSpeedrunsTwitterBot</a>.</p>
 				</div>
 			</div>
 			<div class="container">
@@ -57,7 +59,7 @@
 								<div class="column is-12" id="il-warning">
 									<div class="notification is-danger">
 										<button class="delete" onclick="closeILWarning();"></button>
-										<b>NOTICE</b>:  Due to SRC API restrictions, only the top three runs for each category for ILs will be displayed.
+										<b>NOTICE</b>:  In order to minimize API calls to SRC, only the top three runs for each category for ILs will be displayed.
 									</div>
 								</div>
 								<div class="column is-4">
