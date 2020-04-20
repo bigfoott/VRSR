@@ -18,12 +18,44 @@ a {
 	transition: color .35s ease-out;
 }
 
+
+.button.is-dark {
+	background-color: #2E3136;
+}
+.button.is-dark:hover, .button.is-dark:focus {
+	background-color: #393C42;
+	text-decoration: none;
+}
+.buttonlist {
+	margin-top: 0.25rem;
+}
+.buttonlist > .button {
+	justify-content: left!important;
+}
+.buttonlist > .button > .icon {
+	color: var(--primary-color);
+	
+	-webkit-transition:color .35s ease-out;
+	-moz-transition: color .35s ease-out;
+	-o-transition: color .35s ease-out;
+	transition: color .35s ease-out;
+}
+
 .box, .tabs a, .tabs li:hover {
 	color: #eee;
 }
+.box.equal-height {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
 a:hover {
 	color: var(--primary-color);
 	text-decoration: underline;
+}
+.tabs {
+	transform:rotateX(180deg);
 }
 .tabs a {
 	color: #777;
@@ -45,9 +77,33 @@ a:hover {
 	color: var(--primary-color);
 	border-color: var(--primary-color);
 }
+
+.tabs::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #26282C;
+}
+
+.tabs::-webkit-scrollbar
+{
+	width: 6px;
+	height: 6px;
+	border-radius: 10px;
+	background-color: #26282C;
+}
+
+.tabs::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: var(--primary-color);
+}
+
+#tabs {
+	transform:rotateX(180deg);
+}
+
 .box {
 	background-color: #2E3136;
-	margin-bottom: 1.5rem;
 }
 .table {
 	background-color: inherit;
@@ -55,10 +111,19 @@ a:hover {
 .table.is-hoverable tbody tr:not(.is-selected):hover {
 	background-color: rgba(0,0,0,0.1);
 }
+.csl {
+	opacity: 0;
+}
+.table.is-hoverable tbody tr:not(.is-selected):hover > .csl {
+	opacity: 1;
+}
 .table, .table th, .table thead th {
 	color: #eee;
 	font-weight: bold;
 	letter-spacing: 0px;
+}
+.table thead th {
+	background-color: #393C42;
 }
 .table > tbody > tr {
 	cursor: pointer;
@@ -89,9 +154,11 @@ table td:not([align]), table th:not([align]) {
 }
 .table-img-container: {
 	height: 10rem;
+	min-height: 10rem;
 }
 #table-img {
 	max-height: 10rem;
+	min-height: 10rem;
 	
 	-webkit-touch-callout: none;
     -webkit-user-select: none;

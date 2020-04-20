@@ -12,7 +12,10 @@
 		<meta content="VR Speedrunning Leaderboards" property="og:title">
 		<meta content="A central hub to view the leaderboards for the largest VR speedgames." property="og:description">
 		<meta content="https://bigft.io/images/vrsricon.png" property="og:image">
-		<meta content="#FF9C00" name="theme-color">
+		<meta content="#0165fe" name="theme-color">
+		
+		<meta name="description" content="A central hub to view the leaderboards for the largest VR speedgames.">
+		<meta name="keywords" content="VR Speedrun,VR,Speedrun,Speedrunning,VR Speedrunning,VR Running,Super Hot VR,Super Hot Speedrun, Super Hot VR Speedrun">
 		
 		<script src="https://kit.fontawesome.com/d16c543bf8.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
@@ -21,7 +24,7 @@
 	<body onload="onLoad();">
 		<section class="section">
 			<div class="container">
-				<div class="box">
+				<div class="box" style="margin-bottom: 1.5rem;">
 					<h1 class="title is-2">VR Speedrunning Leaderboards</h1>
 					<p>A central hub to view the leaderboards for the largest VR speedgames.</p>
 					<p>If you'd like to hang out and discuss VR speedrunning, consider joining the <a href="https://discord.gg/7PKWZuW">VR Speedrunning Discord server</a>!</p>
@@ -50,11 +53,32 @@
 								</label>
 							</div>
 							<div class="table-img-container"><img id="table-img" src=""></div>
-							<p><a id="src-url" href="" target="_blank">View on Speedrun.com</a></p>
+							<div class="buttonlist">
+								<a class="button is-dark is-fullwidth" id="button-src" href="#" target="_blank">
+									<span class="icon is-small"><i class="fas fa-trophy"></i></span>
+									<span>Full Leaderboard</span>
+								</a>
+								<a class="button is-dark is-fullwidth" id="button-guides" href="#" target="_blank">
+									<span class="icon is-small"><i class="fas fa-book"></i></span>
+									<span>Guides</span>
+								</a>
+								<a class="button is-dark is-fullwidth" id="button-resources" href="#" target="_blank">
+									<span class="icon is-small"><i class="fas fa-link"></i></span>
+									<span>Resources</span>
+								</a>
+								<a class="button is-dark is-fullwidth" id="button-forums" href="#" target="_blank">
+									<span class="icon is-small"><i class="fas fa-comments"></i></span>
+									<span>Forums</span>
+								</a>
+								<a class="button is-dark is-fullwidth" id="button-stats" href="#" target="_blank">
+									<span class="icon is-small"><i class="fas fa-chart-line"></i></span>
+									<span>Statistics</span>
+								</a>
+							</div>
 						</div>
 					</div>
 					<div class="column is-9">
-						<div class="box">
+						<div class="box equal-height">
 							<div class="columns is-multiline" id="level-select-cols" style="display: none;">
 								<div class="column is-12" id="il-warning">
 									<div class="notification is-danger">
@@ -80,6 +104,8 @@
 			</div>
 		</section>
 		<section class="section is-footer">
+			<p style="color: #aaa;">Currently tracking <span id="stats-categories">...</span> categories across <span id="stats-leaderboards">...</span> leaderboards.</p>
+			<br>
 			<p>Made with <i class="fas fa-heart is-heart"></i> by Bigfoot</p>
 			<div class="icons">
 				<a href="https://github.com/bigfoott"><i class="fab fa-github"></i></a>
@@ -90,6 +116,6 @@
 			</div>
 		</section>
 		<style id="style">.table-platform { display: none; }</style>
-		<script type="text/javascript" src="assets/js/vrsr.js"></script>
+		<script type="text/javascript" src="assets/js/vrsr.js?1"></script>
 	</body>
 </html>
