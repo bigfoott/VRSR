@@ -90,6 +90,161 @@
 		"ignored_var_values": null
 	},
 	{
+		"id": "i_expect_you_to_die",
+		"site_id": "ieytd",
+		"name": "I Expect You To Die",
+		"hardware_var": "",
+		"color": "#E57842",
+		"levels": [
+			{
+				"name": "Friendly Skies",
+				"link": "https://www.speedrun.com/api/v1/levels/y9mxk2xw/records"
+			},
+			{
+				"name": "Squeaky Clean",
+				"link": "https://www.speedrun.com/api/v1/levels/5wk6gqp9/records"
+			},
+			{
+				"name": "Deep Dive",
+				"link": "https://www.speedrun.com/api/v1/levels/592qv439/records"
+			},
+			{
+				"name": "Winter Break",
+				"link": "https://www.speedrun.com/api/v1/levels/29v71zl9/records"
+			},
+			{
+				"name": "First Class",
+				"link": "https://www.speedrun.com/api/v1/levels/xd42vkrw/records"
+			},
+			{
+				"name": "Seat Of Power",
+				"link": "https://www.speedrun.com/api/v1/levels/rdnre57w/records"
+			},
+			{
+				"name": "Death Engine",
+				"link": "https://www.speedrun.com/api/v1/levels/rdnl4evw/records"
+			}
+		],
+		"level_indexes": {
+			"y9mxk2xw": 0,
+			"5wk6gqp9": 1,
+			"592qv439": 2,
+			"29v71zl9": 3,
+			"xd42vkrw": 4,
+			"rdnre57w": 5,
+			"rdnl4evw": 6
+		},
+		"categories": [
+			{
+				"name": "Individual Level Any%",
+				"id": "zd365led"
+			},
+			{
+				"name": "Individual Level 100%",
+				"id": "rklq0jw2"
+			}
+		],
+		"ignored_var_values": {
+			"onv2x20l": "9qjxzogl"
+		}
+	},
+	{
+		"id": "luckys_tale",
+		"site_id": "lt",
+		"name": "Lucky's Tale",
+		"hardware_var": "",
+		"color": "#009DEC",
+		"levels": [
+			{
+				"name": "Leaving Home",
+				"link": "https://www.speedrun.com/api/v1/levels/xd4jqrpd/records"
+			},
+			{
+				"name": "Rainbow Forest",
+				"link": "https://www.speedrun.com/api/v1/levels/xd0gz41w/records"
+			},
+			{
+				"name": "Twilight Towers",
+				"link": "https://www.speedrun.com/api/v1/levels/rw64jm79/records"
+			},
+			{
+				"name": "Overgrown Overture",
+				"link": "https://www.speedrun.com/api/v1/levels/n9376med/records"
+			},
+			{
+				"name": "Danger in the Darkness",
+				"link": "https://www.speedrun.com/api/v1/levels/z9861mld/records"
+			},
+			{
+				"name": "Prince Wiggle's Ruckus",
+				"link": "https://www.speedrun.com/api/v1/levels/rdn0eqvw/records"
+			},
+			{
+				"name": "Trench Trouble",
+				"link": "https://www.speedrun.com/api/v1/levels/ldyym3zd/records"
+			},
+			{
+				"name": "Sunken City",
+				"link": "https://www.speedrun.com/api/v1/levels/gdre5yz9/records"
+			},
+			{
+				"name": "Craggy Canyon",
+				"link": "https://www.speedrun.com/api/v1/levels/nwllr2rw/records"
+			},
+			{
+				"name": "Magma Mambo",
+				"link": "https://www.speedrun.com/api/v1/levels/ywe16qrd/records"
+			},
+			{
+				"name": "Time-Worn Temple",
+				"link": "https://www.speedrun.com/api/v1/levels/69z3k8od/records"
+			},
+			{
+				"name": "Puzzling Passages",
+				"link": "https://www.speedrun.com/api/v1/levels/r9g2vnkd/records"
+			},
+			{
+				"name": "Heart of the Temple",
+				"link": "https://www.speedrun.com/api/v1/levels/o9xnpo1w/records"
+			},
+			{
+				"name": "Glorp's Domain",
+				"link": "https://www.speedrun.com/api/v1/levels/49567zjd/records"
+			}
+		],
+		"level_indexes": {
+			"xd4jqrpd": 0,
+			"xd0gz41w": 1,
+			"rw64jm79": 2,
+			"n9376med": 3,
+			"z9861mld": 4,
+			"rdn0eqvw": 5,
+			"ldyym3zd": 6,
+			"gdre5yz9": 7,
+			"nwllr2rw": 8,
+			"ywe16qrd": 9,
+			"69z3k8od": 10,
+			"r9g2vnkd": 11,
+			"o9xnpo1w": 12,
+			"49567zjd": 13
+		},
+		"categories": [
+			{
+				"name": "Story Mode",
+				"id": "jdz8l9gd"
+			},
+			{
+				"name": "Time Trial",
+				"id": "02qo43yk"
+			},
+			{
+				"name": "Red Coins",
+				"id": "8246ngwd"
+			}
+		],
+		"ignored_var_values": null
+	},
+	{
 		"id": "shvr",
 		"site_id": "shvr",
 		"name": "SUPERHOT VR",
@@ -562,7 +717,7 @@
 		"ignored_var_values": null
 	},
 	{
-		"id": "vacation_simulator",
+		"id": "vs",
 		"site_id": "vs",
 		"name": "Vacation Simulator",
 		"hardware_var": "",

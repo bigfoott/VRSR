@@ -1,5 +1,140 @@
 [
 	{
+		"id": "accounting",
+		"site_id": "acc",
+		"name": "Accounting",
+		"hardware_var": "",
+		"color": "#8d16c7",
+		"boards": [
+			{
+				"name": "Full Game",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/268eery6/category/jdrx9znd"
+			}
+		],
+		"board_indexes": {
+			"jdrx9znd": 0
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "accountingplus",
+		"site_id": "accplus",
+		"name": "Accounting+",
+		"hardware_var": "",
+		"color": "#8d16c7",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/ndxmr8o2"
+			},
+			{
+				"name": "Satan%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/w20wezjd"
+			},
+			{
+				"name": "TheBiggestFan%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/wdmwmqe2"
+			},
+			{
+				"name": "Any% NoShortcuts",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/zd380gyk"
+			},
+			{
+				"name": "Satan% NoShortcuts",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/q2534jgk"
+			},
+			{
+				"name": "TheBiggestFan% NoShortcuts",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glny5d/category/jdreprlk"
+			}
+		],
+		"board_indexes": {
+			"ndxmr8o2": 0,
+			"w20wezjd": 1,
+			"wdmwmqe2": 2,
+			"zd380gyk": 3,
+			"q2534jgk": 4,
+			"jdreprlk": 5
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "adventure_time_magic_mans_head_game",
+		"site_id": "atmmhg",
+		"name": "Adventure Time MMHG",
+		"hardware_var": "",
+		"color": "#FDED52",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/w6jxj5dj/category/9d8v68lk"
+			},
+			{
+				"name": "All Magic Man Boxes",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/w6jxj5dj/category/xd1meowd"
+			}
+		],
+		"board_indexes": {
+			"9d8v68lk": 0,
+			"xd1meowd": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "arizona_sunshine",
+		"site_id": "as",
+		"name": "Arizona Sunshine",
+		"hardware_var": "",
+		"color": "#FBC539",
+		"boards": [
+			{
+				"name": "Easy",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxorydy/category/9kvjwrek"
+			},
+			{
+				"name": "Hard",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxorydy/category/rklew062"
+			},
+			{
+				"name": "Apocalypse",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/3dxorydy/category/ndxpyro2"
+			}
+		],
+		"board_indexes": {
+			"9kvjwrek": 0,
+			"rklew062": 1,
+			"ndxpyro2": 2
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "batman_arkham_vr",
+		"site_id": "bavr",
+		"name": "Batman: Arkham VR",
+		"hardware_var": "",
+		"color": "#5E91B9",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne8ww1/category/xk9g9exd"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne8ww1/category/z276945d"
+			}
+		],
+		"board_indexes": {
+			"xk9g9exd": 0,
+			"z276945d": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
 		"id": "boneworks",
 		"site_id": "bw",
 		"name": "BONEWORKS",
@@ -15,10 +150,6 @@
 				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/w20gg4jk"
 			},
 			{
-				"name": "Flight%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9kvooee2"
-			},
-			{
 				"name": "NewGame+",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9d844qqk"
 			}
@@ -26,10 +157,140 @@
 		"board_indexes": {
 			"ndx99wod": 0,
 			"w20gg4jk": 1,
-			"9kvooee2": 2,
-			"9d844qqk": 3
+			"9d844qqk": 2
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "budget_cuts",
+		"site_id": "bc",
+		"name": "Budget Cuts",
+		"hardware_var": "",
+		"color": "#FF1F1F",
+		"boards": [
+			{
+				"name": "Any% (Current Patch)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/mkeqgvjk"
+			},
+			{
+				"name": "Any% No OOB",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/rkljjo6d"
+			},
+			{
+				"name": "Any% Kill All Robots (Current Patch)",
+				"link": "ttps://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k"
+			}
+		],
+		"board_indexes": {
+			"mkeqgvjk": 0,
+			"rkljjo6d": 1,
+			"5dw7m95k": 2
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "climbey",
+		"site_id": "cl",
+		"name": "Climbey",
+		"hardware_var": "",
+		"color": "#ED821A",
+		"boards": [
+			{
+				"name": "Classic Levels (1-15)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rzwed8/category/wdm4933d"
+			},
+			{
+				"name": "Classic Levels (1-15) (Half Gravity)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rzwed8/category/q25q0nw2"
+			},
+			{
+				"name": "Classic Levels (1-15) (Double Gravity)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rzwed8/category/jdrxg50d"
+			}
+		],
+		"board_indexes": {
+			"wdm4933d": 0,
+			"q25q0nw2": 1,
+			"jdrxg50d": 2
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "doom_vfr",
+		"site_id": "doom",
+		"name": "DooM VFR",
+		"hardware_var": "68kmozql",
+		"color": "#CD001A",
+		"boards": [
+			{
+				"name": "Any% (PC)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxxyq6/category/zdn40yqk",
+				"variableval": "zqorm2xq"
+			},
+			{
+				"name": "Any% (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxxyq6/category/zdn40yqk",
+				"variableval": "0135w4xq"
+			}
+		],
+		"board_indexes": {
+			"zdn40yqk": 0,
+			"zdn40yqk": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": [
+			{ "variable": "e8mmg0e8", "value": "zqorm2xq", "category": "zdn40yqk" },
+			{ "variable": "e8mmg0e8", "value": "0135w4xq", "category": "zdn40yqk" }
+		]
+	},
+	{
+		"id": "hla",
+		"site_id": "hla",
+		"name": "Half-Life: Alyx",
+		"hardware_var": "",
+		"color": "#FF862C",
+		"boards": [
+			{
+				"name": "Any% No Spin",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wkp1wojk"
+			},
+			{
+				"name": "Any% With Spin",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3wznvk"
+			}
+		],
+		"board_indexes": {
+			"wkp1wojk": 0,
+			"zd3wznvk": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "i_expect_you_to_die",
+		"site_id": "ieytd",
+		"name": "I Expect You To Die",
+		"hardware_var": "",
+		"color": "#E57842",
+		"boards": [
+			{
+				"name": "All Missions *Seat of Power Update*",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/9kv7em3k"
+			},
+			{
+				"name": "All Missions *First Class Update*",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/zdn4ornk"
+			}
+		],
+		"board_indexes": {
+			"9kv7em3k": 0,
+			"zdn4ornk": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "jet_island",
@@ -66,7 +327,8 @@
 			"q257nmjd": 3,
 			"wdm8n0o2": 4
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "job_simulator",
@@ -108,7 +370,8 @@
 			"ndxm40r2": 4,
 			"w20w355d": 5
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "lone_echo",
@@ -125,7 +388,99 @@
 		"board_indexes": {
 			"zd3605ed": 0
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "luckys_tale",
+		"site_id": "lt",
+		"name": "Lucky's Tale",
+		"hardware_var": "",
+		"color": "#009DEC",
+		"boards": [
+			{
+				"name": "Story%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/kdkp9x1m/category/7dgg9mpd"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/kdkp9x1m/category/9d86y372"
+			}
+		],
+		"board_indexes": {
+			"7dgg9mpd": 0,
+			"9d86y372": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "moss",
+		"site_id": "moss",
+		"name": "Moss",
+		"hardware_var": "",
+		"color": "#FDCB1C",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne43y1/category/ndxmqyr2"
+			},
+			{
+				"name": "All Scrolls",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne43y1/category/xd1lzg8k"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne43y1/category/w20wo05d"
+			},
+			{
+				"name": "Twilight Garden",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1ne43y1/category/zd38zwnk"
+			}
+		],
+		"board_indexes": {
+			"ndxmqyr2": 0,
+			"xd1lzg8k": 1,
+			"w20wo05d": 2,
+			"zd38zwnk": 3
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "rick_and_morty_virtual_rick-ality",
+		"site_id": "ramvr",
+		"name": "Rick and Morty: VR",
+		"hardware_var": "",
+		"color": "#39C428",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rp5v18/category/zd3lg4nd"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rp5v18/category/wk67x4ed"
+			},
+			{
+				"name": "Craft 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rp5v18/category/z273v90d"
+			},
+			{
+				"name": "Cassette Tapes 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rp5v18/category/wk6105pd"
+			}
+		],
+		"board_indexes": {
+			"zd3lg4nd": 0,
+			"wk67x4ed": 1,
+			"z273v90d": 2,
+			"wk6105pd": 3
+		},
+		"ignored_var_values": {
+			"r8rgp30n": "4lxxnd3l"
+		},
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "shvr",
@@ -152,7 +507,8 @@
 			"ndxp1oo2": 1,
 			"7dgr06xk": 2
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "surgeon_simulator_experience_reality",
@@ -175,7 +531,7 @@
 			},
 			{
 				"name": "True 100%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/jdrx04gd "
+				"link": "https://www.speedrun.com/api/v1/leaderboards/ldel3j63/category/jdrx04gd"
 			}
 		],
 		"board_indexes": {
@@ -186,7 +542,8 @@
 		},
 		"ignored_var_values": {
 			"wle63j48": "81p7vnk1"
-		}
+		},
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "the_climb",
@@ -223,7 +580,8 @@
 			"5dw53led": 3,
 			"7kjp0enk": 4
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "talos_principle_vr",
@@ -255,7 +613,31 @@
 			"02ql5opk": 2,
 			"jdr7zxx2": 3
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "the_walking_dead_saints_and_sinners",
+		"site_id": "twdss",
+		"name": "The Walking Dead: S & S",
+		"hardware_var": "ylqk1v3l",
+		"color": "#FF1F1F",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0wmvv1/category/7dgny6x2"
+			},
+			{
+				"name": "Any% 1.0",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0wmvv1/category/vdo8y11k"
+			}
+		],
+		"board_indexes": {
+			"7dgny6x2": 0,
+			"vdo8y11k": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "to_the_top",
@@ -265,31 +647,128 @@
 		"color": "#FF1F1F",
 		"boards": [
 			{
-				"name": "Any%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k"
+				"name": "Any% (SteamVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k",
+				"variableval": "9qjgx87q"
 			},
 			{
-				"name": "All Levels",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d"
+				"name": "Any% (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k",
+				"variableval": "jq62zevl"
 			},
 			{
-				"name": "100%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk"
+				"name": "Any% (Oculus Home)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k",
+				"variableval": "5lmw42yq"
+			},
+			{
+				"name": "Any% (SteamVR Original Release)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/9d8jwq6k",
+				"variableval": "rqvzr651"
+			},
+			{
+				"name": "All Levels (SteamVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
+				"variableval": "9qjgx87q"
+			},
+			{
+				"name": "All Levels (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
+				"variableval": "jq62zevl"
+			},
+			{
+				"name": "All Levels (Oculus Home)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
+				"variableval": "5lmw42yq"
+			},
+			{
+				"name": "All Levels (SteamVR Original Release)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
+				"variableval": "rqvzr651"
+			},
+			{
+				"name": "100% (SteamVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
+				"variableval": "9qjgx87q"
+			},
+			{
+				"name": "100% (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
+				"variableval": "jq62zevl"
+			},
+			{
+				"name": "100% (Oculus Home)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
+				"variableval": "5lmw42yq"
+			},
+			{
+				"name": "100% (SteamVR Original Release)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
+				"variableval": "rqvzr651"
 			}
 		],
 		"board_indexes": {
 			"9d8jwq6k": 0,
-			"jdz8q83d": 1,
-			"02qoqojk": 2
+			"9d8jwq6k": 1,
+			"9d8jwq6k": 2,
+			"9d8jwq6k": 3,
+			"jdz8q83d": 4,
+			"jdz8q83d": 5,
+			"jdz8q83d": 6,
+			"jdz8q83d": 7,
+			"02qoqojk": 8,
+			"02qoqojk": 9,
+			"02qoqojk": 10,
+			"02qoqojk": 11
 		},
-		"ignored_var_values": {
-			"ylq9gyw8": "jq62zevl",
-			"ylq9gyw8": "5lmw42yq",
-			"ylq9gyw8": "rqvzr651"
-		}
+		"ignored_var_values": null, 
+		"specific_var_for_cats": [
+			{ "variable": "ylq9gyw8", "value": "9qjgx87q", "category": "9d8jwq6k" },
+			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "9d8jwq6k" },
+			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "9d8jwq6k" },
+			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "9d8jwq6k" },
+			{ "variable": "ylq9gyw8", "value": "9qjgx87q", "category": "jdz8q83d" },
+			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "jdz8q83d" },
+			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "jdz8q83d" },
+			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "jdz8q83d" },
+			{ "variable": "ylq9gyw8", "value": "9qjgx87q", "category": "02qoqojk" },
+			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "02qoqojk" },
+			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "02qoqojk" },
+			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "02qoqojk" }
+		]
 	},
 	{
-		"id": "vacation_simulator",
+		"id": "trover",
+		"site_id": "trover",
+		"name": "Trover Saves the Universe",
+		"hardware_var": "",
+		"color": "#9400CF",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/v1pov7z6/category/rklvz48d"
+			},
+			{
+				"name": "All Power Babies",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/v1pov7z6/category/ndx70zv2"
+			},
+			{
+				"name": "100 Baskets",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/v1pov7z6/category/jdre6r5k"
+			}
+		],
+		"board_indexes": {
+			"rklvz48d": 0,
+			"ndx70zv2": 1,
+			"jdre6r5k": 2
+		},
+		"ignored_var_values": {
+			"ylpmx96l": "jqzx44k1"
+		},
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "vs",
 		"site_id": "vs",
 		"name": "Vacation Simulator",
 		"hardware_var": "",
@@ -308,14 +787,15 @@
 			"vdom5e92": 0,
 			"wkpm5w8k": 1
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	},
 	{
 		"id": "vvr",
 		"site_id": "vvr",
 		"name": "Virtual Virtual Reality",
 		"hardware_var": "",
-		"color": "#B214FF",
+		"color": "#8d16c7",
 		"boards": [
 			{
 				"name": "Any%",
@@ -325,6 +805,65 @@
 		"board_indexes": {
 			"wkpm3gwk": 0
 		},
-		"ignored_var_values": null
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+		{
+		"id": "windlands",
+		"site_id": "wl",
+		"name": "Windlands",
+		"hardware_var": "",
+		"color": "#2A65FC",
+		"boards": [
+			{
+				"name": "All Crystals - Hard",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/xd1m15rd"
+			},
+			{
+				"name": "All Crystals - Normal",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/vdo4zny2"
+			},
+			{
+				"name": "All Crystals - Easy",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/wdmq9752"
+			},
+			{
+				"name": "All Crystals - No Hooks",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/zd385lnk"
+			},
+			{
+				"name": "Any% - Hard",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/jdr17z02"
+			},
+			{
+				"name": "Any% - Normal",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/jdzpvyxk"
+			},
+			{
+				"name": "Any% - Easy",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/02q8l5z2"
+			},
+			{
+				"name": "Any% - No Hooks",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/xd1lw38k"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369m031l/category/zd3yvqy2"
+			}
+		],
+		"board_indexes": {
+			"xd1m15rd": 0,
+			"vdo4zny2": 1,
+			"wdmq9752": 2,
+			"zd385lnk": 3,
+			"jdr17z02": 4,
+			"jdzpvyxk": 5,
+			"02q8l5z2": 6,
+			"xd1lw38k": 7,
+			"zd3yvqy2": 8
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
 	}
 ]
