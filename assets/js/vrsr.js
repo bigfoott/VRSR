@@ -125,11 +125,11 @@ function loadType(type)
 function loadGame(id)
 {
 	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;">[RUNS]</tbody>';
-	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
+	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
 	var tabTemplate = '<li id="tab-[ID]"><a onclick="loadTab([ID]);">[NAME]</a></li>';
 	var imgTemplate = 'https://www.speedrun.com/themes/[ID]/cover-256.png';
 	
-	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th style="width: 3rem;"></th></tr></thead>';
+	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
 	
 	tabs.innerHTML = '';
 	
@@ -225,7 +225,7 @@ function loadGame(id)
 					if (jruns[k].run.players[0].rel != 'guest')
 					{
 						player = players[jruns[k].run.players[0].id];
-						player = '<a href="https://www.speedrun.com/' + player + '" target="_blank" title="Click to view user on Speedrun.com">' + player + '</a>'
+						player = '<a href="https://www.speedrun.com/user/' + player + '" target="_blank" title="Click to view user on Speedrun.com">' + player + '</a>'
 					} 
 					else
 						player = jruns[k].run.players[0].name;
@@ -335,13 +335,13 @@ function loadGame(id)
 function loadGameLevels(levelindex)
 {
 	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;">[RUNS]</tbody>';
-	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
+	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
 	var tabTemplate = '<li id="tab-[ID]"><a onclick="loadTab([ID]);">[NAME]</a></li>';
 	var imgTemplate = 'https://www.speedrun.com/themes/[ID]/cover-256.png';
 	
 	var id = document.getElementById("dropdown-select").selectedIndex;
 	
-	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th style="width: 3rem;"></th></tr></thead>';
+	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
 	
 	root.style.setProperty('--primary-color', json[id].color);
 	
@@ -612,6 +612,31 @@ function loadStats()
 		document.getElementById("stats-categories").innerHTML = categories;
 		document.getElementById("stats-leaderboards").innerHTML = leaderboards;
 	});
+}
+
+var descContent;
+var descButton;
+function toggleDesc()
+{
+	if (descContent == null)
+	{
+		descContent = document.getElementById("desc-content");
+	}
+	if (descButton == null)
+	{
+		descButton = document.getElementById("desc-button");
+	}
+	
+	if (descButton.innerText == "Show more ▼")
+	{
+		descContent.style.display = "block";
+		descButton.innerText = "Show less ▲";
+	}
+	else
+	{
+		descContent.style.display = "none";
+		descButton.innerText = "Show more ▼";
+	}
 }
 
 function dropdownChange(value)

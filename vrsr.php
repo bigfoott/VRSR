@@ -27,6 +27,7 @@
 				<div class="box" style="margin-bottom: 1.5rem;">
 					<h1 class="title is-2">VR Speedrunning Leaderboards</h1>
 					<p>A central hub to view the leaderboards for the largest VR speedgames.</p>
+					<span id="desc-content" style="display: none;">
 					<p>If you'd like to hang out and discuss VR speedrunning, consider joining the <a href="https://discord.gg/7PKWZuW">VR Speedrunning Discord server</a>!</p>
 					<br>
 					<p>Only main categories with runs are displayed. If there is a game or category that you believe belongs here, ping me (bigfoot#0001) in the VR Speedrunning Discord server.</p>
@@ -34,6 +35,9 @@
 					<br>
 					<p>For the latest VR world records, check out the <a href="https://twitter.com/VRSpeedruns">VR Speedruns Twitter bot</a>!</p>
 					<p>All the code is open source and available on Github. For this site, check out <a href="https://github.com/bigfoott/VRSR">bigfoott/VRSR</a> and for the bot, check out <a href="https://github.com/bigfoott/VRSpeedrunsTwitterBot">bigfoott/VRSpeedrunsTwitterBot</a>.</p>
+					</span>
+					<br>
+					<a id="desc-button" onclick="toggleDesc()">Show more ▼</a>
 				</div>
 			</div>
 			<div class="container">
@@ -109,13 +113,13 @@
 			<p>Made with <i class="fas fa-heart is-heart"></i> by Bigfoot</p>
 			<div class="icons">
 				<a href="https://github.com/bigfoott"><i class="fab fa-github"></i></a>
-				<a href="https://www.speedrun.com/user/bigfoott"><i class="fas fa-trophy"></i></a>
+				<a href="https://www.speedrun.com/user/bigfoot"><i class="fas fa-trophy"></i></a>
 				<a href="https://twitter.com/bigfoootttt"><i class="fab fa-twitter"></i></a>
 				<a href="https://twitch.tv/bigfooott"><i class="fab fa-twitch"></i></a>
 				<a href="https://youtube.com/bigfoott" class="end"><i class="fab fa-youtube"></i></a>
 			</div>
 		</section>
 		<style id="style">.table-platform { display: none; }</style>
-		<script type="text/javascript" src="assets/js/vrsr.js?1"></script>
+		<script type="text/javascript" src="assets/js/vrsr.js"></script>
 	</body>
 </html>

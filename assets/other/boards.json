@@ -152,12 +152,22 @@
 			{
 				"name": "NewGame+",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9d844qqk"
+			},
+			{
+				"name": "Flight%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/mke9p5jd"
+			},
+			{
+				"name": "Handgun Course",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/w20g70ok"
 			}
 		],
 		"board_indexes": {
 			"ndx99wod": 0,
 			"w20gg4jk": 1,
-			"9d844qqk": 2
+			"9d844qqk": 2,
+			"mke9p5jd": 3,
+			"w20g70ok": 4
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -260,11 +270,16 @@
 			{
 				"name": "Any% With Spin",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3wznvk"
+			},
+			{
+				"name": "Glitchless",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wdmxg83k"
 			}
 		],
 		"board_indexes": {
 			"wkp1wojk": 0,
-			"zd3wznvk": 1
+			"zd3wznvk": 1,
+			"wdmxg83k": 2
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null

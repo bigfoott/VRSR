@@ -107,6 +107,8 @@ a:hover {
 }
 .table {
 	background-color: inherit;
+	
+	word-wrap: break-word;
 }
 .table.is-hoverable tbody tr:not(.is-selected):hover {
 	background-color: rgba(0,0,0,0.1);
@@ -124,6 +126,9 @@ a:hover {
 }
 .table thead th {
 	background-color: #393C42;
+}
+.table thead th, .table tbody tr th {
+	word-wrap: normal;
 }
 .table > tbody > tr {
 	cursor: pointer;
