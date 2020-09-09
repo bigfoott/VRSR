@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
-		<link rel="icon" href="images/vrsrfavicon.png">
+		<link rel="icon" href="/images/vrsrfavicon.png">
 		
 		<title>VR Speedrunning</title>
 		
@@ -19,7 +19,7 @@
 		
 		<script src="https://kit.fontawesome.com/d16c543bf8.js" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-		<link rel="stylesheet" href="assets/css/vrsr.css"> 
+		<link rel="stylesheet" href="/assets/css/vrsr.css"> 
 	</head>
 	<body onload="onLoad();">
 		<section class="section">
@@ -120,6 +120,6 @@
 			</div>
 		</section>
 		<style id="style">.table-platform { display: none; }</style>
-		<script type="text/javascript" src="assets/js/vrsr.js"></script>
+		<script type="text/javascript" src="/assets/js/vrsr.js"></script>
 	</body>
 </html>

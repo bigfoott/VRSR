@@ -143,7 +143,7 @@ function loadGame(id)
 	{
 		var specificVar = "";
 		
-		if (json[id].specific_var_for_cats != null)
+		if (json[id].specific_var_for_cats != null && json[id].boards[i].variableval != null)
 		{
 			specificVar = "&var-" + json[id].specific_var_for_cats[i].variable + "=" + json[id].specific_var_for_cats[i].value;
 		}
@@ -158,11 +158,9 @@ function loadGame(id)
 				var table = tblTemplate;
 				var runs = '';
 				
-				var index = 0;
-				if (json[id].specific_var_for_cats == null)
-					index = json[id].board_indexes[j.data.category];
-				else
-				{
+				var index = json[id].board_indexes[j.data.category];;
+				if (json[id].specific_var_for_cats != null && json[id].boards[index].variableval != null)
+								{
 					var targetvalue = j.data.values[Object.keys(j.data.values)[0]];
 					
 					for (index = 0; index < json[id].specific_var_for_cats.length; index++)
@@ -308,7 +306,7 @@ function loadGame(id)
 						lines[i].addEventListener('click', event => {
 							if (event.path[1].dataset.target)
 							{
-								if (event.path[1].className == "csl")
+								if (event.path[1].className == "is-hidden-mobile csl")
 									copyToClipboard(event.path[1].dataset.target);
 								else
 									window.open(event.path[1].dataset.target);
@@ -527,7 +525,7 @@ function loadGameLevels(levelindex)
 						lines[_i].addEventListener('click', event => {
 							if (event.path[1].dataset.target)
 							{
-								if (event.path[1].className == "csl")
+								if (event.path[1].className == "is-hidden-mobile csl")
 									copyToClipboard(event.path[1].dataset.target);
 								else
 									window.open(event.path[1].dataset.target);
@@ -732,9 +730,7 @@ function openlink(url)
 }
 
 function copyToClipboard(val){
-	console.log(val);
-	
-    var dummy = document.createElement("input");
+	var dummy = document.createElement("input");
     //dummy.style.display = 'none';
     document.body.appendChild(dummy);
 
@@ -743,4 +739,6 @@ function copyToClipboard(val){
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);
+	
+	console.log("Copied URL to clipboard: " + val);
 }

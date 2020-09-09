@@ -154,19 +154,19 @@
 				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/9d844qqk"
 			},
 			{
-				"name": "Flight%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/mke9p5jd"
-			},
-			{
 				"name": "Handgun Course",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/w20g70ok"
+			},
+			{
+				"name": "The Cure (Zombie Warehouse)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/j1llkl41/category/wk6814o2"
 			}
 		],
 		"board_indexes": {
 			"ndx99wod": 0,
 			"w20gg4jk": 1,
 			"9d844qqk": 2,
-			"mke9p5jd": 3,
+			"wk6814o2": 3,
 			"w20g70ok": 4
 		},
 		"ignored_var_values": null,
@@ -248,7 +248,7 @@
 		],
 		"board_indexes": {
 			"zdn40yqk": 0,
-			"zdn40yqk": 1
+			"zdn40yqk-": 1
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": [
@@ -264,25 +264,59 @@
 		"color": "#FF862C",
 		"boards": [
 			{
-				"name": "Any% No Spin",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wkp1wojk"
+				"name": "Any% (No Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wkp1wojk",
+				"variableval": "21gr0emq"
 			},
 			{
-				"name": "Any% With Spin",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3wznvk"
+				"name": "Any% (Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wkp1wojk",
+				"variableval": "jqz72vml"
 			},
 			{
 				"name": "Glitchless",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wdmxg83k"
+			},
+			{
+				"name": "Inbounds (No Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3xqzrd",
+				"variableval": "5q87vekl"
+			},
+			{
+				"name": "Inbounds (Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3xqzrd",
+				"variableval": "4qye2x71"
+			},
+			{
+				"name": "All Resin (No Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/9kv9n132",
+				"variableval": "mln6vydq"
+			},
+			{
+				"name": "All Resin (Spin)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/9kv9n132",
+				"variableval": "810en55q"
 			}
 		],
 		"board_indexes": {
 			"wkp1wojk": 0,
-			"zd3wznvk": 1,
-			"wdmxg83k": 2
+			"wkp1wojk-": 1,
+			"wdmxg83k": 2,
+			"zd3xqzrd": 3,
+			"zd3xqzrd-": 4,
+			"9kv9n132": 5,
+			"9kv9n132-": 6
 		},
 		"ignored_var_values": null,
-		"specific_var_for_cats": null
+		"specific_var_for_cats": [
+			{ "variable": "6nj4xqjn", "value": "21gr0emq", "category": "wkp1wojk" },
+			{ "variable": "6nj4xqjn", "value": "jqz72vml", "category": "wkp1wojk" },
+			{ "variable": "NULL" },
+			{ "variable": "ql67m4k8", "value": "5q87vekl", "category": "zd3xqzrd" },
+			{ "variable": "ql67m4k8", "value": "4qye2x71", "category": "zd3xqzrd" },
+			{ "variable": "onvjx20n", "value": "mln6vydq", "category": "9kv9n132" },
+			{ "variable": "onvjx20n", "value": "810en55q", "category": "9kv9n132" }
+		]
 	},
 	{
 		"id": "i_expect_you_to_die",
@@ -458,6 +492,24 @@
 			"xd1lzg8k": 1,
 			"w20wo05d": 2,
 			"zd38zwnk": 3
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "portal_stories_vr",
+		"site_id": "ps",
+		"name": "Portal Stories: VR",
+		"hardware_var": "",
+		"color": "#0088FF",
+		"boards": [
+			{
+				"name": "Beat The Game",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q45z0d/category/5dwgn4nk"
+			}
+		],
+		"board_indexes": {
+			"5dwgn4nk": 0
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -655,6 +707,92 @@
 		"specific_var_for_cats": null
 	},
 	{
+		"id": "tnn",
+		"site_id": "tnn",
+		"name": "Time Travelling Navy Seal N.W.",
+		"hardware_var": "",
+		"color": "#00A40C",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/xd1vl77d"
+			},
+			{
+				"name": "Any% Glitchless",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/zd3x878d"
+			},
+			{
+				"name": "Low%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/rklrvjrk"
+			},
+			{
+				"name": "NG+ (Warped)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/ndx47152",
+				"variableval": "5q87wv6l"
+			},
+			{
+				"name": "NG+ (Warpless)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/ndx47152",
+				"variableval": "4qyeg2d1"
+			},
+			{
+				"name": "Flyless (WP)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/vdo1m3y2",
+				"variableval": "5lmj5g4l"
+			},
+			{
+				"name": "Flyless (No WP)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/vdo1m3y2",
+				"variableval": "zqow4r2l"
+			},
+			{
+				"name": "Clipless (WP)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/7dg6497k",
+				"variableval": "rqvw8ew1"
+			},
+			{
+				"name": "Clipless (No WP)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/7dg6497k",
+				"variableval": "5legjmz1"
+			},
+			{
+				"name": "Bonus%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/wkp3mvg2"
+			},
+			{
+				"name": "All Categories",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/o6glevnd/category/mke4w9x2"
+			}
+		],
+		"board_indexes": {
+			"xd1vl77d": 0,
+			"zd3x878d": 1,
+			"rklrvjrk": 2,
+			"ndx47152": 3,
+			"ndx47152-": 4,
+			"vdo1m3y2": 5,
+			"vdo1m3y2-": 6,
+			"7dg6497k": 7,
+			"7dg6497k-": 8,
+			"wkp3mvg2": 9,
+			"mke4w9x2": 10
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": [
+			{ "variable": "NULL" },
+			{ "variable": "NULL" },
+			{ "variable": "NULL" },
+			{ "variable": "dloyxed8", "value": "5q87wv6l", "category": "ndx47152" },
+			{ "variable": "dloyxed8", "value": "4qyeg2d1", "category": "ndx47152" },
+			{ "variable": "0nwodq5l", "value": "5lmj5g4l", "category": "vdo1m3y2" },
+			{ "variable": "0nwodq5l", "value": "zqow4r2l", "category": "vdo1m3y2" },
+			{ "variable": "7896my58", "value": "rqvw8ew1", "category": "7dg6497k" },
+			{ "variable": "7896my58", "value": "5legjmz1", "category": "7dg6497k" },
+			{ "variable": "NULL" },
+			{ "variable": "NULL" }
+		]
+	},
+	{
 		"id": "to_the_top",
 		"site_id": "ttt",
 		"name": "To The Top",
@@ -684,57 +822,57 @@
 			{
 				"name": "All Levels (SteamVR)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
-				"variableval": "9qjgx87q"
+				"variableval": "5lmzdmjq"
 			},
 			{
 				"name": "All Levels (PSVR)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
-				"variableval": "jq62zevl"
+				"variableval": "81w3n0ol"
 			},
 			{
 				"name": "All Levels (Oculus Home)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
-				"variableval": "5lmw42yq"
+				"variableval": "zqod5vp1"
 			},
 			{
 				"name": "All Levels (SteamVR Original Release)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/jdz8q83d",
-				"variableval": "rqvzr651"
+				"variableval": "013326d1"
 			},
 			{
 				"name": "100% (SteamVR)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
-				"variableval": "9qjgx87q"
+				"variableval": "rqv3my7l"
 			},
 			{
 				"name": "100% (PSVR)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
-				"variableval": "jq62zevl"
+				"variableval": "5ledex51"
 			},
 			{
 				"name": "100% (Oculus Home)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
-				"variableval": "5lmw42yq"
+				"variableval": "0q5k23mq"
 			},
 			{
 				"name": "100% (SteamVR Original Release)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6qe996g/category/02qoqojk",
-				"variableval": "rqvzr651"
+				"variableval": "4lx3y62l"
 			}
 		],
 		"board_indexes": {
 			"9d8jwq6k": 0,
-			"9d8jwq6k": 1,
-			"9d8jwq6k": 2,
-			"9d8jwq6k": 3,
+			"9d8jwq6k-": 1,
+			"9d8jwq6k--": 2,
+			"9d8jwq6k---": 3,
 			"jdz8q83d": 4,
-			"jdz8q83d": 5,
-			"jdz8q83d": 6,
-			"jdz8q83d": 7,
+			"jdz8q83d-": 5,
+			"jdz8q83d--": 6,
+			"jdz8q83d---": 7,
 			"02qoqojk": 8,
-			"02qoqojk": 9,
-			"02qoqojk": 10,
-			"02qoqojk": 11
+			"02qoqojk-": 9,
+			"02qoqojk--": 10,
+			"02qoqojk---": 11
 		},
 		"ignored_var_values": null, 
 		"specific_var_for_cats": [
@@ -742,14 +880,14 @@
 			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "9d8jwq6k" },
 			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "9d8jwq6k" },
 			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "9d8jwq6k" },
-			{ "variable": "ylq9gyw8", "value": "9qjgx87q", "category": "jdz8q83d" },
-			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "jdz8q83d" },
-			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "jdz8q83d" },
-			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "jdz8q83d" },
-			{ "variable": "ylq9gyw8", "value": "9qjgx87q", "category": "02qoqojk" },
-			{ "variable": "ylq9gyw8", "value": "jq62zevl", "category": "02qoqojk" },
-			{ "variable": "ylq9gyw8", "value": "5lmw42yq", "category": "02qoqojk" },
-			{ "variable": "ylq9gyw8", "value": "rqvzr651", "category": "02qoqojk" }
+			{ "variable": "ylqk7wvl", "value": "5lmzdmjq", "category": "jdz8q83d" },
+			{ "variable": "ylqk7wvl", "value": "81w3n0ol", "category": "jdz8q83d" },
+			{ "variable": "ylqk7wvl", "value": "zqod5vp1", "category": "jdz8q83d" },
+			{ "variable": "ylqk7wvl", "value": "013326d1", "category": "jdz8q83d" },
+			{ "variable": "gnxr51gn", "value": "rqv3my7l", "category": "02qoqojk" },
+			{ "variable": "gnxr51gn", "value": "5ledex51", "category": "02qoqojk" },
+			{ "variable": "gnxr51gn", "value": "0q5k23mq", "category": "02qoqojk" },
+			{ "variable": "gnxr51gn", "value": "4lx3y62l", "category": "02qoqojk" }
 		]
 	},
 	{
@@ -801,6 +939,29 @@
 		"board_indexes": {
 			"vdom5e92": 0,
 			"wkpm5w8k": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "vertigo_remastered",
+		"site_id": "vert",
+		"name": "Vertigo Remastered",
+		"hardware_var": "",
+		"color": "#7B63B8",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/wk6801r2"
+			},
+			{
+				"name": "New Game+",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/n2ygejm2"
+			}
+		],
+		"board_indexes": {
+			"wk6801r2": 0,
+			"n2ygejm2": 1
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null

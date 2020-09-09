@@ -512,6 +512,71 @@
 		"ignored_var_values": null
 	},
 	{
+		"id": "tnn",
+		"site_id": "tnn",
+		"name": "Time Travelling Navy Seal N.W.",
+		"hardware_var": "",
+		"color": "#00A40C",
+		"levels": [
+			{
+				"name": "Medieval",
+				"link": "https://www.speedrun.com/api/v1/levels/ldy8o2zw/records"
+			},
+			{
+				"name": "Western",
+				"link": "https://www.speedrun.com/api/v1/levels/n93yrord/records"
+			},
+			{
+				"name": "WW2",
+				"link": "https://www.speedrun.com/api/v1/levels/z98gxn1w/records"
+			},
+			{
+				"name": "Prehistoric",
+				"link": "https://www.speedrun.com/api/v1/levels/rdn2yn6d/records"
+			},
+			{
+				"name": "Future",
+				"link": "https://www.speedrun.com/api/v1/levels/ldy8o27w/records"
+			},
+			{
+				"name": "Finale",
+				"link": "https://www.speedrun.com/api/v1/levels/gdr1zgkw/records"
+			},
+			{
+				"name": "Bonus",
+				"link": "https://www.speedrun.com/api/v1/levels/nwlp8ng9/records"
+			}
+		],
+		"level_indexes": {
+			"ldy8o2zw": 0,
+			"n93yrord": 1,
+			"z98gxn1w": 2,
+			"rdn2yn6d": 3,
+			"ldy8o27w": 4,
+			"gdr1zgkw": 5,
+			"nwlp8ng9": 6
+		},
+		"categories": [
+			{
+				"name": "Any%",
+				"id": "wk68voq2"
+			},
+			{
+				"name": "Any% Glitchless",
+				"id": "n2yg73z2"
+			},
+			{
+				"name": "Low%",
+				"id": "7kj61qn2"
+			},
+			{
+				"name": "NG+",
+				"id": "xk9v8n4d"
+			}
+		],
+		"ignored_var_values": null
+	},
+	{
 		"id": "to_the_top",
 		"site_id": "ttt",
 		"name": "To The Top",
