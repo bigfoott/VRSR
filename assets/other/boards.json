@@ -189,7 +189,7 @@
 			},
 			{
 				"name": "Any% Kill All Robots (Current Patch)",
-				"link": "ttps://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k"
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k"
 			}
 		],
 		"board_indexes": {
@@ -232,7 +232,7 @@
 		"id": "doom_vfr",
 		"site_id": "doom",
 		"name": "DooM VFR",
-		"hardware_var": "68kmozql",
+		"hardware_var": "",
 		"color": "#CD001A",
 		"boards": [
 			{
@@ -254,6 +254,160 @@
 		"specific_var_for_cats": [
 			{ "variable": "e8mmg0e8", "value": "zqorm2xq", "category": "zdn40yqk" },
 			{ "variable": "e8mmg0e8", "value": "0135w4xq", "category": "zdn40yqk" }
+		]
+	},
+	{
+		"id": "duck_season",
+		"site_id": "ds",
+		"name": "Duck Season",
+		"hardware_var": "",
+		"color": "#F01B6A",
+		"boards": [
+			{
+				"name": "Fiesta Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/zd36qxyd"
+			},
+			{
+				"name": "Best Men Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/9kvmn9jk"
+			},
+			{
+				"name": "Nuke Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/rklqnrq2"
+			},
+			{
+				"name": "Canon Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/w20wn3vd"
+			},
+			{
+				"name": "Stuck Forever",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/wdmwr6x2"
+			},
+			{
+				"name": "Killed Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/vdooy11d"
+			},
+			{
+				"name": "Secret Ending",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/7dgry6xk"
+			},
+			{
+				"name": "100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9dow8331/category/mkezy4xk"
+			}
+		],
+		"board_indexes": {
+			"zd36qxyd": 0,
+			"9kvmn9jk": 1,
+			"rklqnrq2": 2,
+			"w20wn3vd": 3,
+			"wdmwr6x2": 4,
+			"vdooy11d": 5,
+			"7dgry6xk": 6,
+			"mkezy4xk": 7
+		},
+		"ignored_var_values": {
+			"wl33ryvl": "gq7z9nr1"
+		},
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "everybodysgolfvr",
+		"site_id": "eg",
+		"name": "Everybody's Golf VR",
+		"hardware_var": "",
+		"color": "#70BD6A",
+		"boards": [
+			{
+				"name": "Forest (3h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdrl3gxd",
+				"variableval": "4qyo9m2l"
+			},
+			{
+				"name": "Forest (9h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdrl3gxd",
+				"variableval": "mlnm97j1"
+			},
+			{
+				"name": "Forest (18h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdrl3gxd",
+				"variableval": "810jpy2l"
+			},
+			{
+				"name": "Sea Side (3h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/q25ml08d",
+				"variableval": "4qyo9m2l"
+			},
+			{
+				"name": "Sea Side (9h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/q25ml08d",
+				"variableval": "mlnm97j1"
+			},
+			{
+				"name": "Sea Side (18h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/q25ml08d",
+				"variableval": "810jpy2l"
+			},
+			{
+				"name": "Dinosaur (3h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdzwgqvd",
+				"variableval": "4qyo9m2l"
+			},
+			{
+				"name": "Dinosaur (9h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdzwgqvd",
+				"variableval": "mlnm97j1"
+			},
+			{
+				"name": "Dinosaur (18h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/jdzwgqvd",
+				"variableval": "810jpy2l"
+			},
+			{
+				"name": "All Courses (3h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/n2y94q8d",
+				"variableval": "4qyo9m2l"
+			},
+			{
+				"name": "All Courses (9h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/n2y94q8d",
+				"variableval": "mlnm97j1"
+			},
+			{
+				"name": "All Courses (18h)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde344j6/category/n2y94q8d",
+				"variableval": "810jpy2l"
+			}
+		],
+		"board_indexes": {
+			"jdrl3gxd": 0,
+			"jdrl3gxd-": 1,
+			"jdrl3gxd--": 2,
+			"q25ml08d": 3,
+			"q25ml08d-": 4,
+			"q25ml08d--": 5,
+			"jdzwgqvd": 6,
+			"jdzwgqvd-": 7,
+			"jdzwgqvd--": 8,
+			"n2y94q8d": 9,
+			"n2y94q8d-": 10,
+			"n2y94q8d--": 11
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": [
+			{ "variable": "r8r10q7n", "value": "4qyo9m2l", "category": "jdrl3gxd" },
+			{ "variable": "r8r10q7n", "value": "mlnm97j1", "category": "jdrl3gxd" },
+			{ "variable": "r8r10q7n", "value": "810jpy2l", "category": "jdrl3gxd" },
+			{ "variable": "r8r10q7n", "value": "4qyo9m2l", "category": "q25ml08d" },
+			{ "variable": "r8r10q7n", "value": "mlnm97j1", "category": "q25ml08d" },
+			{ "variable": "r8r10q7n", "value": "810jpy2l", "category": "q25ml08d" },
+			{ "variable": "r8r10q7n", "value": "4qyo9m2l", "category": "jdzwgqvd" },
+			{ "variable": "r8r10q7n", "value": "mlnm97j1", "category": "jdzwgqvd" },
+			{ "variable": "r8r10q7n", "value": "810jpy2l", "category": "jdzwgqvd" },
+			{ "variable": "r8r10q7n", "value": "4qyo9m2l", "category": "n2y94q8d" },
+			{ "variable": "r8r10q7n", "value": "mlnm97j1", "category": "n2y94q8d" },
+			{ "variable": "r8r10q7n", "value": "810jpy2l", "category": "n2y94q8d" }
+			
 		]
 	},
 	{
@@ -326,17 +480,52 @@
 		"color": "#E57842",
 		"boards": [
 			{
+				"name": "All Missions *Death Engine Update*",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/5dw47x0k"
+			},
+			{
 				"name": "All Missions *Seat of Power Update*",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/9kv7em3k"
 			},
 			{
 				"name": "All Missions *First Class Update*",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/zdn4ornk"
+			},
+			{
+				"name": "All Missions *Original IEYTD*",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/ndxmgz12"
+			},
+			{
+				"name": "All missions 100%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/7dgr194k"
+			},
+			{
+				"name": "One Hand Champ",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/n2y5wpmk"
+			},
+			{
+				"name": "EVERYTHING MUST GO!",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/xk9gqq4d"
+			},
+			{
+				"name": "Sewer Slide",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/xd1e09r2"
+			},
+			{
+				"name": "Hey Look Mum! No Hands!",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/k6q4w0zd/category/7kjpxj4k"
 			}
 		],
 		"board_indexes": {
-			"9kv7em3k": 0,
-			"zdn4ornk": 1
+			"5dw47x0k": 0,
+			"9kv7em3k": 1,
+			"zdn4ornk": 2,
+			"ndxmgz12": 3,
+			"7dgr194k": 4,
+			"n2y5wpmk": 5,
+			"xk9gqq4d": 6,
+			"xd1e09r2": 7,
+			"7kjpxj4k": 8
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -387,12 +576,8 @@
 		"color": "#009100",
 		"boards": [
 			{
-				"name": "All Jobs Any%",
+				"name": "All Jobs",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/w20z6yod"
-			},
-			{
-				"name": "All Jobs 100%",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mp8312/category/rklqn682"
 			},
 			{
 				"name": "Gourmet Chef",
@@ -413,11 +598,10 @@
 		],
 		"board_indexes": {
 			"w20z6yod": 0,
-			"rklqn682": 1,
-			"9kvm9l8k": 2,
-			"rklqrzn2": 3,
-			"ndxm40r2": 4,
-			"w20w355d": 5
+			"9kvm9l8k": 1,
+			"rklqrzn2": 2,
+			"ndxm40r2": 3,
+			"w20w355d": 4
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -497,7 +681,25 @@
 		"specific_var_for_cats": null
 	},
 	{
-		"id": "portal_stories_vr",
+		"id": "paper_beast",
+		"site_id": "pb",
+		"name": "Paper Beast",
+		"hardware_var": "",
+		"color": "#E65F03",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/m1mx52k6/category/9d835e72"
+			}
+		],
+		"board_indexes": {
+			"9d835e72": 0
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "prtlvr",
 		"site_id": "ps",
 		"name": "Portal Stories: VR",
 		"hardware_var": "",
@@ -547,6 +749,24 @@
 		"ignored_var_values": {
 			"r8rgp30n": "4lxxnd3l"
 		},
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "robo_recall",
+		"site_id": "rr",
+		"name": "Robo Recall",
+		"hardware_var": "",
+		"color": "#92AAD5",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/9d3rm3wd/category/rkl3we8k"
+			}
+		],
+		"board_indexes": {
+			"rkl3we8k": 0
+		},
+		"ignored_var_values": null,
 		"specific_var_for_cats": null
 	},
 	{
@@ -951,17 +1171,27 @@
 		"color": "#7B63B8",
 		"boards": [
 			{
-				"name": "Any%",
+				"name": "Any% - w/o telecheat",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/vdo19o62"
+			},
+			{
+				"name": "New Game+ - w/o telecheat",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/7dg6orgk"
+			},
+			{
+				"name": "Any% - w/ telecheat",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/wk6801r2"
 			},
 			{
-				"name": "New Game+",
+				"name": "New Game+ - w/ telecheat",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/369pxj01/category/n2ygejm2"
 			}
 		],
 		"board_indexes": {
-			"wk6801r2": 0,
-			"n2ygejm2": 1
+			"vdo19o62": 0,
+			"7dg6orgk": 1,
+			"wk6801r2": 2,
+			"n2ygejm2": 3
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null

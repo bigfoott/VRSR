@@ -133,12 +133,11 @@ a:hover {
 .table > tbody > tr {
 	cursor: pointer;
 }
-table td:not([align]), table th:not([align]) {
+.table td:not([align]), .table th:not([align]) {
 	text-align: center;
 }
 .table th:not([align]) {
 	font-size: 1.2rem;
-	text-align: center;
 }
 .table > tbody > tr > th:not([align]) {
 	font-size: 1rem;
@@ -150,6 +149,13 @@ table td:not([align]), table th:not([align]) {
 	border-color: #393C42;
 }
 
+.latest-wr {
+	text-align: left;
+	font-size: 1.1em;
+}
+.latest-wr a, #info-modal > .modal-content > .box > p > a {
+	font-weight: bold;
+}
 
 .select select, .select select:hover, option {
 	background-color: #393C42;
@@ -159,7 +165,7 @@ table td:not([align]), table th:not([align]) {
 .select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after, .select:focus {
 	border-color: var(--primary-color);
 }
-.table-img-container: {
+.table-img-container {
 	height: 10rem;
 	min-height: 10rem;
 }
@@ -172,7 +178,9 @@ table td:not([align]), table th:not([align]) {
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+	user-select: none;
+	
+	border-radius: 6px;
 }
 .title {
 	color: #eee;
@@ -295,7 +303,114 @@ input:checked + .slider:before {
   transform: translateX(40px);
 }
 
+#game-platforms-list, #game-year-release {
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+	user-select: none;
+
+	text-align: center;
+	font-size: 0.8rem;
+
+	color: #bbb;
+}
+
 /* ----------------------------------------- */
+/* source: https://tobiasahlin.com/spinkit/  */
+
+#loadingDiv .spinner {
+	width: 40px;
+	height: 40px;
+	background-color: #777;
+  
+	margin: 100px auto;
+	-webkit-animation: sk-rotateplane 0.8s infinite ease-in-out;
+	animation: sk-rotateplane 0.8s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+	0% { -webkit-transform: perspective(120px) }
+	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+	100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+	0% { 
+	  transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	  -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+	} 50% { 
+	  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+	} 100% { 
+	  transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	  -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+  }
+
+
+/* added by me */
+#loadingDiv .belowspinner {
+	color: #777;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: -5rem;
+}
+
+#topLoadingDiv .spinner {
+	width: 40px;
+	height: 40px;
+	background-color: #777;
+  
+	margin: 65px auto;
+	margin-top: 0;
+	margin-bottom: 106px;
+	-webkit-animation: sk-rotateplane 0.8s infinite ease-in-out;
+	animation: sk-rotateplane 0.8s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+	0% { -webkit-transform: perspective(120px) }
+	50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+	100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+	0% { 
+	  transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+	  -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+	} 50% { 
+	  transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+	  -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+	} 100% { 
+	  transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	  -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+	}
+  }
+
+/* added by me */
+#topLoadingDiv .belowspinner {
+	color: #777;
+	font-weight: bold;
+	font-size: 1.5rem;
+	text-align: center;
+	margin-top: -5rem;
+}
+
+/* ----------------------------------------- */
+
+#loadingDiv {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+#topLoadingDiv {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
 
 body {
 	font-family: Whitney;

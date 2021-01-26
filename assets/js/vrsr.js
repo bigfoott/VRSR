@@ -5,6 +5,11 @@ var lastId;
 
 var tabs;
 var mainTable;
+var firstTab;
+
+var totalBoards;
+var loadedBoards;
+var loadedLatestWRs;
 
 var totalTabs;
 
@@ -14,12 +19,34 @@ var justChangedMode;
 
 var defaultId;
 
+var infoModal;
+
+var gameYearRelease;
+var gamePlatformList;
+var platformsList;
+
 function onLoad()
 {
 	root = document.documentElement;
 	
 	tabs = document.getElementById("tabs");
 	mainTable = document.getElementById("main-table");
+
+	infoModal = document.getElementById("info-modal");
+	gameYearRelease = document.getElementById("game-year-release");
+	gamePlatformList = document.getElementById("game-platforms-list");
+
+	loadedLatestWRs = 0;
+
+	platformsList = [];
+	platformsList["w89rwwel"] = "Vive";
+	platformsList["4p9zq09r"] = "Oculus";
+	platformsList["83exvv9l"] = "Index";
+	platformsList["w89r4d6l"] = "WMR";
+	platformsList["8gej2n93"] = "PC";
+	platformsList["nzelkr6q"] = "PS4";
+	platformsList["wxeo2d6r"] = "PSN";
+	platformsList["nzeljv9q"] = "PS4 Pro";
 
 	if (getCookie("ilwarning") != "")
 	{
@@ -38,6 +65,7 @@ function onLoad()
 	else loadType("game");
 	
 	loadStats();
+	loadLatestWRs();
 }
 
 function loadType(type)
@@ -50,7 +78,7 @@ function loadType(type)
 		document.getElementById("switch-left").style.color = "#eee";
 		document.getElementById("switch-right").style.color = "";
 		
-		get("https://bigft.io/assets/other/boards.json")
+		get("https://bigft.io/assets/other/boards.json?" + randomInt(100))
 		.then((data) => {
 			json = JSON.parse(data);
 			
@@ -92,7 +120,7 @@ function loadType(type)
 		document.getElementById("switch-right").style.color = "#eee";
 		document.getElementById("switch-left").style.color = "";
 		
-		get("https://bigft.io/assets/other/il-boards.json")
+		get("https://bigft.io/assets/other/il-boards.json?" + randomInt(100))
 		.then((data) => {
 			json = JSON.parse(data);
 			
@@ -124,21 +152,57 @@ function loadType(type)
 
 function loadGame(id)
 {
-	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;">[RUNS]</tbody>';
-	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
+	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;" class="is-size-7-touch">[RUNS]</tbody>';
+	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com" id="run-[RUNID]"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td class="is-hidden-mobile">[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
 	var tabTemplate = '<li id="tab-[ID]"><a onclick="loadTab([ID]);">[NAME]</a></li>';
 	var imgTemplate = 'https://www.speedrun.com/themes/[ID]/cover-256.png';
 	
-	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
+	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;" class="is-size-7-touch">#</th><th class="is-size-7-touch">Runner</th><th style="width: 6.5em;" class="is-size-7-touch">Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th class="is-hidden-mobile">Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
 	
 	tabs.innerHTML = '';
+	gameYearRelease.innerText = '...'
+	gamePlatformList.innerText = '...';
+	firstTab = 9999;
 	
 	totalTabs = json[id].boards.length;
+
+	document.title = "VRSR - " + json[id].name;
 	
+	document.getElementById("loadingDiv").style.display = "block";
+	document.getElementById("runsDiv").style.display = "none";
+
 	root.style.setProperty('--primary-color', json[id].color);
 	
 	document.getElementById("table-img").src = "";
 	
+	totalBoards = json[id].boards.length;
+	loadedBoards = 0;
+
+	get("https://www.speedrun.com/api/v1/games/" + json[id].id + "?embed=platforms")
+	.then((data) => {
+		var plats = [];
+
+		var jj = JSON.parse(data);
+
+		gameYearRelease.innerText = jj.data.released;
+
+		for (var kk = 0; kk < jj.data.platforms.data.length; kk++)
+		{
+			var plat = jj.data.platforms.data[kk];
+			
+			if (plat.id in platformsList)
+			{
+				plats.push(platformsList[plat.id]);
+			}
+			else
+			{
+				plats.push(plat.name);
+			}
+		}
+
+		gamePlatformList.innerText = plats.join(", ");
+	});
+
 	for (var i = 0; i < json[id].boards.length; i++)
 	{
 		var specificVar = "";
@@ -246,9 +310,9 @@ function loadGame(id)
 					if (platform == undefined) platform = "Not Specified";
 					
 					var date = new Date();
-					if (jruns[k].run.date != null)
-						date = new Date(jruns[k].run.date);
-					else
+					//if (jruns[k].run.date != null)
+					//	date = new Date(jruns[k].run.date);
+					//else
 						date = new Date(jruns[k].run.submitted);
 					
 					var options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -256,7 +320,8 @@ function loadGame(id)
 					var run_id = jruns[k].run.id;
 					
 					run = run.replace("[RUNLINK]", jruns[k].run.weblink)
-							 .replace("[PLACE]", nth(addedRuns + 1))
+							 .replace("[RUNID]", jruns[k].run.id)
+						 	 .replace("[PLACE]", nth(addedRuns + 1))
 							 .replace("[USER]", player)
 							 .replace("[TIME]", time)
 							 .replace("[HARDWARE]", hardware)
@@ -296,6 +361,9 @@ function loadGame(id)
 				
 				table = table.replace("[ID]", index).replace("[RUNS]", runs);
 				
+				if (firstTab > index)
+					firstTab = index;
+
 				mainTable.innerHTML += table;
 				
 				var lines = document.getElementsByTagName('tr');
@@ -314,6 +382,27 @@ function loadGame(id)
 						});
 					}					
 				}
+
+				for (var k = 0; k < jruns.length; k++)
+				{
+					var temp = document.getElementById("run-" + jruns[k].run.id);
+					if (temp !== null)
+					{
+						temp.addEventListener('touchstart', e => {
+							if (e.path[1].dataset.target)
+							{
+								//console.log("touchend");
+								window.open(event.path[1].dataset.target);
+							}
+						});
+					}
+				}
+
+				loadedBoards++;
+			}
+			else
+			{
+				loadedBoards++;
 			}
 		});
 	}
@@ -327,22 +416,56 @@ function loadGame(id)
 	document.getElementById("button-forums").href = "https://www.speedrun.com/" + json[id].id + "/forum";
 	document.getElementById("button-stats").href = "https://www.speedrun.com/" + json[id].id + "/gamestats";
 	
-	loadTab(0);
+	loadTab(9999);
 }
 
 function loadGameLevels(levelindex)
 {
-	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;">[RUNS]</tbody>';
-	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td>[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
+	var tblTemplate = '<tbody id="tbody-[ID]" style="display: none;" class="is-size-7-touch">[RUNS]</tbody>';
+	var runTemplate = '<tr data-target="[RUNLINK]" title="Click to view run on Speedrun.com"><th>[PLACE]</th><td>[USER]</td><td>[TIME]</td><td class="table-hardware is-hidden-touch">[HARDWARE]</td><td class="table-platform is-hidden-touch">[PLATFORM]</td><td class="is-hidden-mobile">[DATE]</td><td data-target="[SHORTLINK]" class="is-hidden-mobile csl" title="Click to copy shortlink"><i class="far fa-copy"></i></td></tr>';
 	var tabTemplate = '<li id="tab-[ID]"><a onclick="loadTab([ID]);">[NAME]</a></li>';
 	var imgTemplate = 'https://www.speedrun.com/themes/[ID]/cover-256.png';
 	
 	var id = document.getElementById("dropdown-select").selectedIndex;
 	
-	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;">#</th><th>Runner</th><th>Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th>Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
+	mainTable.innerHTML = '<thead><tr><th style="width: 3rem;" class="is-size-7-touch">#</th><th class="is-size-7-touch">Runner</th><th class="is-size-7-touch">Time</th><th class="table-hardware is-hidden-touch" style="width: 22rem;">Hardware</th><th class="table-platform is-hidden-touch">Platform</th><th class="is-hidden-mobile">Date</th><th class="is-hidden-mobile" style="width: 3rem;"></th></tr></thead>';
 	
+	gameYearRelease.innerText = '...'
+	gamePlatformList.innerText = '...';
+	firstTab = 9999;
+
 	root.style.setProperty('--primary-color', json[id].color);
 	
+	document.title = "VRSR - " + json[id].name;
+
+	document.getElementById("loadingDiv").style.display = "block";
+	document.getElementById("runsDiv").style.display = "none";
+
+	get("https://www.speedrun.com/api/v1/games/" + json[id].id + "?embed=platforms")
+	.then((data) => {
+		var plats = [];
+
+		var jj = JSON.parse(data);
+
+		gameYearRelease.innerText = jj.data.released;
+
+		for (var kk = 0; kk < jj.data.platforms.data.length; kk++)
+		{
+			var plat = jj.data.platforms.data[kk];
+			
+			if (plat.id in platformsList)
+			{
+				plats.push(platformsList[plat.id]);
+			}
+			else
+			{
+				plats.push(plat.name);
+			}
+		}
+
+		gamePlatformList.innerText = plats.join(", ");
+	});
+
 	var newTabs = false;
 	if (tabs.children.length == json[id].levels.length)
 	{
@@ -377,6 +500,9 @@ function loadGameLevels(levelindex)
 		lastId = id;
 	}
 	
+	totalBoards = json[id].categories.length;
+	loadedBoards = 0;
+
 	get(json[id].levels[levelindex].link + "?embed=players,platforms,variables")
 	.then((data) => {
 		var j = JSON.parse(data);
@@ -468,9 +594,9 @@ function loadGameLevels(levelindex)
 					if (platform == undefined) platform = "Not Specified";
 					
 					var date = new Date();
-					if (jruns[k].run.date != null)
-						date = new Date(jruns[k].run.date);
-					else
+					//if (jruns[k].run.date != null)
+					//	date = new Date(jruns[k].run.date);
+					//else
 						date = new Date(jruns[k].run.submitted);
 					
 					var options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -514,7 +640,10 @@ function loadGameLevels(levelindex)
 				}
 				
 				table = table.replace("[ID]", i).replace("[RUNS]", runs);
-			
+				
+				if (firstTab > i)
+					firstTab = i;
+
 				mainTable.innerHTML += table;
 				
 				var lines = document.getElementsByTagName('tr');
@@ -533,6 +662,12 @@ function loadGameLevels(levelindex)
 						});
 					}					
 				}
+
+				loadedBoards++;
+			}
+			else
+			{
+				loadedBoards++;
 			}
 		}
 		
@@ -551,51 +686,124 @@ function loadGameLevels(levelindex)
 	document.getElementById("button-forums").href = "https://www.speedrun.com/" + json[id].id + "/forum";
 	document.getElementById("button-stats").href = "https://www.speedrun.com/" + json[id].id + "/gamestats";
 	
-	loadTab(0);
+	loadTab(9999);
 }
 
 function loadTab(index)
 {
-	if (document.getElementById("tbody-0") == null)
-		setTimeout(function(){ loadTab(index); }, 250);
-	else
+	//console.log(loadedBoards + " - " + totalBoards);
+
+	if (index == 9999)
 	{
-		for (var i = 0; i < totalTabs; i++)
+		if (loadedBoards < totalBoards)
 		{
-			if (i < 10)
-			{
-				if (document.getElementById("tbody-" + i) && document.getElementById("tab-0" + i))
-				{
-					document.getElementById("tbody-" + i).style.display = "none";
-					document.getElementById("tab-0" + i).classList.remove("is-active");
-				}
-			}
-			else
-			{
-				if (document.getElementById("tbody-" + i) && document.getElementById("tab-" + i))
-				{
-					document.getElementById("tbody-" + i).style.display = "none";
-					document.getElementById("tab-" + i).classList.remove("is-active");
-				}
-			}
+			setTimeout(function(){ loadTab(index); }, 250);
+			return;
 		}
-		
-		document.getElementById("tbody-" + index).style.display = "table-row-group";
-		
-		if (index < 10)
+
+		index = firstTab;
+	}
+	
+	if (document.getElementById("loadingDiv").style.display == "block")
+	{
+		document.getElementById("loadingDiv").style.display = "none";
+		document.getElementById("runsDiv").style.display = "block";
+	}
+
+	for (var i = 0; i < totalTabs; i++)
+	{
+		if (i < 10)
 		{
-			document.getElementById("tab-0" + index).classList.add("is-active");
+			if (document.getElementById("tbody-" + i) && document.getElementById("tab-0" + i))
+			{
+				document.getElementById("tbody-" + i).style.display = "none";
+				document.getElementById("tab-0" + i).classList.remove("is-active");
+			}
 		}
 		else
 		{
-			document.getElementById("tab-" + index).classList.add("is-active");
+			if (document.getElementById("tbody-" + i) && document.getElementById("tab-" + i))
+			{
+				document.getElementById("tbody-" + i).style.display = "none";
+				document.getElementById("tab-" + i).classList.remove("is-active");
+			}
 		}
+	}
+	
+	document.getElementById("tbody-" + index).style.display = "table-row-group";
+	
+	if (index < 10)
+	{
+		document.getElementById("tab-0" + index).classList.add("is-active");
+	}
+	else
+	{
+		document.getElementById("tab-" + index).classList.add("is-active");
+	}
+}
+
+function loadLatestWRs()
+{
+	for (var index = 0; index < latestWRs.length; index++)
+	{
+		get("https://www.speedrun.com/api/v1/runs/" + latestWRs[index] + "?embed=players,platforms,variables,game,category")
+		.then((data) => {
+			var j = JSON.parse(data);
+			var i = latestWRs.indexOf(j.data.id)
+			
+			var game = j.data.game.data.names.international;
+			var category = j.data.category.data.name;
+			var subcat = ''; //TODO (eventually lol)
+			var time = (j.data.times.primary).replace('PT','').replace('H','h ').replace('M','m ').replace('S','s');
+
+			var runner = '';
+			if (j.data.players.data[0].rel != 'guest')
+			{
+				runner = j.data.players.data[0].names.international;
+			}
+			else
+			{
+				runner = j.data.players.data[0].name;
+			}
+
+			var date = '';
+			var dateObj = new Date();
+			//if (j.data.date != null)
+			//{
+			//	dateObj = new Date(j.data.date);
+			//}
+			//else
+			//{
+				dateObj = new Date(j.data.submitted);
+			//}
+			date = timeAgo(dateObj);
+
+			var template = '<table class="latest-wr"><tr><td><a>[GAME]</a> - <a>[CATEGORY][SUBCAT]</a></td></tr><tr><td>in <a>[TIME]</a> by <a>[RUNNER]</a></td></tr><tr><td>[DATE]</td></tr></table>';
+			var ele = document.getElementById("latestWR-" + (i + 1));
+			ele.innerHTML = template.replace("[GAME]", game)
+									.replace("[CATEGORY]", category)
+									.replace("[SUBCAT]", subcat)
+									.replace("[TIME]", time)
+									.replace("[RUNNER]", runner)
+									.replace("[DATE]", date);
+
+			document.getElementById("latestWR-" + (i + 1)).style.background = 
+				"linear-gradient(to right, rgba(46, 49, 54, 1) 1%, rgba(46, 49, 54, 0.8), rgba(46, 49, 54, 1)) 1%, url(https://www.speedrun.com/themes/" + j.data.game.data.abbreviation + "/cover-256.png) no-repeat center/cover";
+
+			loadedLatestWRs++;
+
+			if (loadedLatestWRs == 4)
+			{
+				document.getElementById("topLoadingDiv").style.display = "none";
+				document.getElementById("topDiv").style.display = "flex";
+			}
+		});
 	}
 }
 
 function loadStats()
 {	
-	get("https://bigft.io/assets/other/boards.json")
+	get("https://bigft.io/assets/other/boards.json?" + randomInt(100))
 	.then((data) => {
 		var statsjson = JSON.parse(data);
 		
@@ -635,6 +843,15 @@ function toggleDesc()
 		descContent.style.display = "none";
 		descButton.innerText = "Show more ▼";
 	}
+}
+
+function openInfoModal()
+{
+	infoModal.classList.add("is-active");
+}
+function closeInfoModal()
+{
+	infoModal.classList.remove("is-active");
 }
 
 function dropdownChange(value)
@@ -696,14 +913,64 @@ const NOW = new Date()
 const times = [["day", 86400], ["month", 2592000], ["year", 31536000]]
 
 function timeAgo(date) {
+
+	var seconds = Math.floor((new Date() - date) / 1000);
+  
+	var interval = seconds / 31536000;
+	var _s = "s";
+
+	if (interval > 1) {
+		if (Math.floor(interval) == 1) {
+			_s = "";
+		}
+
+	  	return Math.floor(interval) + " year" + _s + " ago";
+	}
+	interval = seconds / 2592000;
+	if (interval > 1) {
+		if (Math.floor(interval) == 1) {
+			_s = "";
+		}
+
+	  	return Math.floor(interval) + " month" + _s + " ago";
+	}
+	interval = seconds / 86400;
+	if (interval > 1) {
+		
+		if (Math.floor(interval) == 1) {
+			_s = "";
+		}
+
+	  	return Math.floor(interval) + " day" + _s + " ago";
+	}
+	interval = seconds / 3600;
+	if (interval > 1) {
+		if (Math.floor(interval) == 1) {
+			_s = "";
+		}
+
+	  	return Math.floor(interval) + " hour" + _s + " ago";
+	}
+	interval = seconds / 60;
+	if (interval > 1) {
+		if (Math.floor(interval) == 1) {
+			_s = "";
+		}
+
+	  	return Math.floor(interval) + " minute" + _s + " ago";
+	}
+	return "Just now";
+}
+
+function timeAgoOLD(date) {
     var diff = Math.round((NOW - date) / 1000)
     for (var t = 0; t < times.length; t++) {
         if (diff < times[t][1]) {
             if (t == 0) {
-                return "Today"
+                return "Today";
             } else {
-                diff = Math.round(diff / times[t - 1][1])
-                return diff + " " + times[t - 1][0] + (diff == 1?" ago":"s ago")
+                diff = Math.round(diff / times[t - 1][1]);
+                return diff + " " + times[t - 1][0] + (diff == 1?" ago":"s ago");
             }
         }
 		else if (diff >= 31536000)
@@ -741,4 +1008,8 @@ function copyToClipboard(val){
     document.body.removeChild(dummy);
 	
 	console.log("Copied URL to clipboard: " + val);
+}
+
+function randomInt(max) {
+	return Math.floor(Math.random() * Math.floor(max));
 }
