@@ -180,25 +180,53 @@
 		"color": "#FF1F1F",
 		"boards": [
 			{
-				"name": "Any% (Current Patch)",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/mkeqgvjk"
+				"name": "Any% (Cheat Mutators)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/zd377ze2",
+				"variableval": "814y76j1"
 			},
 			{
-				"name": "Any% No OOB",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/rkljjo6d"
+				"name": "Any% (No Cheats)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/zd377ze2",
+				"variableval": "z19m8vkl"
 			},
 			{
-				"name": "Any% Kill All Robots (Current Patch)",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k"
+				"name": "Inbounds (Cheat Mutators)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/rkljjo6d",
+				"variableval": "814y76j1"
+			},
+			{
+				"name": "Inbounds (No Cheats)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/rkljjo6d",
+				"variableval": "z19m8vkl"
+			},
+			{
+				"name": "Any% Kill All Robots (Cheat Mutators)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k",
+				"variableval": "814y76j1"
+			},
+			{
+				"name": "Any% Kill All Robots (No Cheats)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde3zpn6/category/5dw7m95k",
+				"variableval": "z19m8vkl"
 			}
 		],
 		"board_indexes": {
-			"mkeqgvjk": 0,
-			"rkljjo6d": 1,
-			"5dw7m95k": 2
+			"zd377ze2": 0,
+			"-zd377ze2": 1,
+			"rkljjo6d": 2,
+			"-rkljjo6d": 3,
+			"5dw7m95k": 4,
+			"-5dw7m95k": 5
 		},
 		"ignored_var_values": null,
-		"specific_var_for_cats": null
+		"specific_var_for_cats": [
+			{ "variable": "dloykzj8", "value": "814y76j1", "category": "zd377ze2" },
+			{ "variable": "dloykzj8", "value": "z19m8vkl", "category": "zd377ze2" },
+			{ "variable": "dloykzj8", "value": "814y76j1", "category": "rkljjo6d" },
+			{ "variable": "dloykzj8", "value": "z19m8vkl", "category": "rkljjo6d" },
+			{ "variable": "dloykzj8", "value": "814y76j1", "category": "5dw7m95k" },
+			{ "variable": "dloykzj8", "value": "z19m8vkl", "category": "5dw7m95k" }
+		]
 	},
 	{
 		"id": "climbey",
@@ -224,6 +252,29 @@
 			"wdm4933d": 0,
 			"q25q0nw2": 1,
 			"jdrxg50d": 2
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "doctor_who_the_edge_of_time",
+		"site_id": "drwho",
+		"name": "Doctor Who: The Edge Of Time",
+		"hardware_var": "",
+		"color": "#515bd0",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/yd4o4kw1/category/vdox6q9d"
+			},
+			{
+				"name": "Weeping Angels",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/yd4o4kw1/category/02qm8qjd"
+			}
+		],
+		"board_indexes": {
+			"vdox6q9d": 0,
+			"02qm8qjd": 1
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -428,7 +479,7 @@
 				"variableval": "jqz72vml"
 			},
 			{
-				"name": "Glitchless",
+				"name": "No Major Glitches",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/wdmxg83k"
 			},
 			{
@@ -440,16 +491,6 @@
 				"name": "Inbounds (Spin)",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/zd3xqzrd",
 				"variableval": "4qye2x71"
-			},
-			{
-				"name": "All Resin (No Spin)",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/9kv9n132",
-				"variableval": "mln6vydq"
-			},
-			{
-				"name": "All Resin (Spin)",
-				"link": "https://www.speedrun.com/api/v1/leaderboards/76rxevl6/category/9kv9n132",
-				"variableval": "810en55q"
 			}
 		],
 		"board_indexes": {
@@ -457,9 +498,7 @@
 			"wkp1wojk-": 1,
 			"wdmxg83k": 2,
 			"zd3xqzrd": 3,
-			"zd3xqzrd-": 4,
-			"9kv9n132": 5,
-			"9kv9n132-": 6
+			"zd3xqzrd-": 4
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": [
@@ -467,9 +506,7 @@
 			{ "variable": "6nj4xqjn", "value": "jqz72vml", "category": "wkp1wojk" },
 			{ "variable": "NULL" },
 			{ "variable": "ql67m4k8", "value": "5q87vekl", "category": "zd3xqzrd" },
-			{ "variable": "ql67m4k8", "value": "4qye2x71", "category": "zd3xqzrd" },
-			{ "variable": "onvjx20n", "value": "mln6vydq", "category": "9kv9n132" },
-			{ "variable": "onvjx20n", "value": "810en55q", "category": "9kv9n132" }
+			{ "variable": "ql67m4k8", "value": "4qye2x71", "category": "zd3xqzrd" }
 		]
 	},
 	{
@@ -526,6 +563,39 @@
 			"xk9gqq4d": 6,
 			"xd1e09r2": 7,
 			"7kjpxj4k": 8
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "i_expect_you_to_die_2",
+		"site_id": "eiytd2",
+		"name": "I Expect You to Die 2",
+		"hardware_var": "",
+		"color": "#E57842",
+		"boards": [
+			{
+				"name": "All Missions",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76r39vq6/category/xd1jlg4d"
+			},
+			{
+				"name": "Story%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76r39vq6/category/9d8yxywk"
+			},
+			{
+				"name": "100% All Souvenirs",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76r39vq6/category/zd3j8wv2"
+			},
+			{
+				"name": "Die%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/76r39vq6/category/9kv87o8d"
+			}
+		],
+		"board_indexes": {
+			"xd1jlg4d": 0,
+			"9d8yxywk": 1,
+			"zd3j8wv2": 2,
+			"9kv87o8d": 3
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -616,10 +686,15 @@
 			{
 				"name": "Any%",
 				"link": "https://www.speedrun.com/api/v1/leaderboards/lde39wx6/category/zd3605ed"
+			},
+			{
+				"name": "Inbounds",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/lde39wx6/category/wdmvmyed"
 			}
 		],
 		"board_indexes": {
-			"zd3605ed": 0
+			"zd3605ed": 0,
+			"wdmvmyed": 1
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
@@ -770,6 +845,29 @@
 		"specific_var_for_cats": null
 	},
 	{
+		"id": "star_wars_tales_from_the_galaxys_edge",
+		"site_id": "swtftge",
+		"name": "Star Wars: TFTGE",
+		"hardware_var": "",
+		"color": "#F79F41",
+		"boards": [
+			{
+				"name": "Any%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvzx4k6/category/xd14nx7d"
+			},
+			{
+				"name": "Mini Droid%",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvzx4k6/category/9kv6ego2"
+			}
+		],
+		"board_indexes": {
+			"xd14nx7d": 0,
+			"9kv6ego2": 1
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
 		"id": "shvr",
 		"site_id": "shvr",
 		"name": "SUPERHOT VR",
@@ -869,6 +967,102 @@
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
+	},
+	{
+		"id": "the_climb_2",
+		"site_id": "tc2",
+		"name": "The Climb 2",
+		"hardware_var": "",
+		"color": "#00E2FF",
+		"boards": [
+			{
+				"name": "All Levels",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/9d8og9q2"
+			},
+			{
+				"name": "Alps",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/wdm9834k"
+			},
+			{
+				"name": "Bay",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/vdoz3lok"
+			},
+			{
+				"name": "Canyon",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/wkp9vxv2"
+			},
+			{
+				"name": "City",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/7dgx9j4k"
+			},
+			{
+				"name": "North",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pd0qxmw1/category/mkevr692"
+			}
+		],
+		"board_indexes": {
+			"9d8og9q2": 0,
+			"wdm9834k": 1,
+			"vdoz3lok": 2,
+			"wkp9vxv2": 3,
+			"7dgx9j4k": 4,
+			"mkevr692": 5
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": null
+	},
+	{
+		"id": "the_lab",
+		"site_id": "thelab",
+		"name": "The Lab",
+		"hardware_var": "",
+		"color": "#7DBDFD",
+		"boards": [
+			{
+				"name": "Longbow (Wave 16)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/5dw67je2",
+				"variableval": "5lmzn04q"
+			},
+			{
+				"name": "Longbow (Wave 32)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/5dw67je2",
+				"variableval": "81w38x5l"
+			},
+			{
+				"name": "Robot Repair",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/mkelqo8d",
+				"variableval": "jq6kn43l"
+			},
+			{
+				"name": "Slingshot",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/7dg0487k"
+			},
+			{
+				"name": "Xortex 26XX Classic",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/wkp0mjg2"
+			},
+			{
+				"name": "Defeat Tracer Core",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/4d79lwg1/category/w20gewzk"
+			}
+		],
+		"board_indexes": {
+			"5dw67je2": 0,
+			"5dw67je2-": 1,
+			"mkelqo8d": 2,
+			"7dg0487k": 3,
+			"wkp0mjg2": 4,
+			"w20gewzk": 5
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": [
+			{ "variable": "rn1091o8", "value": "5lmzn04q", "category": "5dw67je2" },
+			{ "variable": "rn1091o8", "value": "81w38x5l", "category": "5dw67je2" },
+			{ "variable": "kn0jkgol", "value": "jq6kn43l", "category": "mkelqo8d" },
+			{ "variable": "NULL" },
+			{ "variable": "NULL" },
+			{ "variable": "NULL" }
+		]
 	},
 	{
 		"id": "talos_principle_vr",
@@ -1195,6 +1389,76 @@
 		},
 		"ignored_var_values": null,
 		"specific_var_for_cats": null
+	},
+	{
+		"id": "vader_immortal",
+		"site_id": "vi",
+		"name": "Vader Immortal",
+		"hardware_var": "",
+		"color": "#CD001A",
+		"boards": [
+			{
+				"name": "Episode 1 (Oculus/PC)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/q25evwy2",
+				"variableval": "5le98xpq"
+			},
+			{
+				"name": "Episode 1 (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/q25evwy2",
+				"variableval": "0q5y83rl"
+			},
+			{
+				"name": "Episode 2 (Oculus/PC)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/jdrom0gd",
+				"variableval": "5le98xpq"
+			},
+			{
+				"name": "Episode 2 (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/jdrom0gd",
+				"variableval": "0q5y83rl"
+			},
+			{
+				"name": "Episode 3 (Oculus/PC)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/jdz6j432",
+				"variableval": "5le98xpq"
+			},
+			{
+				"name": "Episode 3 (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/jdz6j432",
+				"variableval": "0q5y83rl"
+			},
+			{
+				"name": "All Episodes (Oculus/PC)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/02qm0xjd",
+				"variableval": "5le98xpq"
+			},
+			{
+				"name": "All Episodes (PSVR)",
+				"link": "https://www.speedrun.com/api/v1/leaderboards/pdvz4zo6/category/02qm0xjd",
+				"variableval": "0q5y83rl"
+			}
+		],
+		"board_indexes": {
+			"q25evwy2": 0,
+			"q25evwy2-": 1,
+			"jdrom0gd": 2,
+			"jdrom0gd-": 3,
+			"jdz6j432": 4,
+			"jdz6j432-": 5,
+			"02qm0xjd": 6,
+			"02qm0xjd-": 7
+		},
+		"ignored_var_values": null,
+		"specific_var_for_cats": [
+			{ "variable": "6njzq2pl", "value": "5le98xpq", "category": "q25evwy2" },
+			{ "variable": "6njzq2pl", "value": "0q5y83rl", "category": "q25evwy2" },
+			{ "variable": "6njzq2pl", "value": "5le98xpq", "category": "jdrom0gd" },
+			{ "variable": "6njzq2pl", "value": "0q5y83rl", "category": "jdrom0gd" },
+			{ "variable": "6njzq2pl", "value": "5le98xpq", "category": "jdz6j432" },
+			{ "variable": "6njzq2pl", "value": "0q5y83rl", "category": "jdz6j432" },
+			{ "variable": "6njzq2pl", "value": "5le98xpq", "category": "02qm0xjd" },
+			{ "variable": "6njzq2pl", "value": "0q5y83rl", "category": "02qm0xjd" }
+		]
 	},
 	{
 		"id": "vvr",

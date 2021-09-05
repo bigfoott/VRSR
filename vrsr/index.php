@@ -17,9 +17,11 @@
 		<meta name="description" content="A central hub to view the leaderboards for the largest VR speedgames.">
 		<meta name="keywords" content="VR Speedrun,VR,Speedrun,Speedrunning,VR Speedrunning,VR Running,Super Hot VR,Super Hot Speedrun, Super Hot VR Speedrun">
 		
-		<script src="https://kit.fontawesome.com/d16c543bf8.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+		<link href="/assets/fa/css/all.css" rel="stylesheet">
+		<link rel="stylesheet" href="/assets/css/bulma.min.css">
 		<link rel="stylesheet" href="/assets/css/vrsr.css">
+
+		<link rel="stylesheet" href="/assets/css/googlefonts.css">
 	</head>
 	<body onload="onLoad();">
 		<section class="section">
@@ -32,6 +34,7 @@
 						<a onclick="openInfoModal()"><i class="fas fa-info-circle"></i></a>
 					</div>
 				</div>
+				<p style="color: #fff; margin-bottom: 2em; margin-top: -1em;">Notice: A full rewrite of this site is currently in the works. The UI will be cleaner and the site will feature more useful info.</p>
 			</div>
 			<div id="info-modal" class="modal">
 				<div class="modal-background" onclick="closeInfoModal()"></div>
@@ -158,13 +161,13 @@
 		<section class="section is-footer">
 			<p style="color: #aaa;">Currently tracking <span id="stats-categories">...</span> categories across <span id="stats-leaderboards">...</span> leaderboards.</p>
 			<br>
-			<p>Made with <i class="fas fa-heart is-heart"></i> by <a href="https://github.com/bigfoott">Bigfoot</a>.</p>
+			<p>Made with <i class="fas fa-heart is-heart"></i> by <a href="https://github.com/bigfoott" style="font-weight: bold;">Bigfoot</a></p>
 			<div class="icons">
-				<a href="https://github.com/bigfoott/VRSR"><i class="fab fa-github"></i></a>
+				<a href="https://github.com/bigfoott/VRSROld"><i class="fab fa-github"></i></a>
 				<a href="https://twitter.com/VRSpeedruns"><i class="fab fa-twitter"></i></a>
 			</div>
 			<script>var latestWRs = <?php echo file_get_contents('../../data/latestwrs.json'); ?>;</script>
-			<script type="text/javascript" src="/assets/js/vrsrnew.js?123"></script>
+			<script type="text/javascript" src="/assets/js/vrsr.js?123"></script>
 		</section>
 	</body>
 </html>

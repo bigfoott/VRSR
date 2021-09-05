@@ -18,6 +18,10 @@ a {
 	transition: color .35s ease-out;
 }
 
+.select select:focus {
+	border: none;
+	box-shadow: none;
+}
 
 .button.is-dark {
 	background-color: #2E3136;
@@ -164,6 +168,11 @@ a:hover {
 }
 .select:not(.is-multiple):not(.is-loading)::after, .select:hover:not(.is-multiple):not(.is-loading)::after, .select:focus {
 	border-color: var(--primary-color);
+
+	-webkit-transition: border .25s ease-out, color .25s ease-out;
+	-moz-transition: border .25s ease-out, color .25s ease-out;
+	-o-transition: border .25s ease-out, color .25s ease-out;
+	transition: border .25s ease-out, color .25s ease-out;
 }
 .table-img-container {
 	height: 10rem;
@@ -413,7 +422,8 @@ input:checked + .slider:before {
 }
 
 body {
-	font-family: Whitney;
+	font-family: 'Open Sans';
+	font-size: 0.95em;
 }
 
 
@@ -426,37 +436,4 @@ body {
 .select, .select > select {
 	margin-bottom: 1rem;
 	width: 100%;
-}
-
-
-/* Font */
-@font-face {
-	font-family:Whitney;
-	font-style:light;
-	font-weight:300;
-	src:url("/assets/fonts/WhitneyLight.woff") format("woff");
-}
-@font-face {
-	font-family:Whitney;
-	font-style:normal;
-	font-weight:500;
-	src:url("/assets/fonts/WhitneyNormal.woff") format("woff");
-}
-@font-face {
-	font-family:Whitney;
-	font-style:medium;
-	font-weight:600;
-	src:url("/assets/fonts/WhitneyMedium.woff") format("woff");
-}
-@font-face {
-	font-family:WhitneyMedium;
-	font-style:medium;
-	font-weight:600;
-	src:url("/assets/fonts/WhitneyMedium2.woff") format("woff");
-}
-@font-face {
-	font-family:Whitney;
-	font-style:bold;
-	font-weight:700;
-	src:url("/assets/fonts/WhitneyBold.woff") format("woff");
 }
